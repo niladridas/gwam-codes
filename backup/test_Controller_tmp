@@ -1,0 +1,313 @@
+#include <iostream>
+#include <string>
+#include <ctime>
+#include <cstdlib>  // For mkstmp()
+#include <cstdio>  // For remove()
+#include <sys/time.h>
+#include <boost/tuple/tuple.hpp>
+#include <boost/lexical_cast.hpp>
+#include <barrett/log.h>
+#include <barrett/units.h>
+#include <barrett/detail/stl_utils.h>
+#include <barrett/systems.h>
+#include <barrett/products/product_manager.h>
+//#include "myDataProcessing.h"
+#define BARRETT_SMF_VALIDATE_ARGS
+#include <barrett/standard_main_function.h>
+//#include "../include/myDataProcessing.h"
+
+//#include <CriticController.h>
+#include<errDotGen.h>
+#include <myController.h>
+#include <compTorqueController.h>
+#include <virtualSensor.h>
+using namespace barrett;
+using systems::connect;
+using detail::waitForEnter;
+// This function template will accept a math::Matrix with any number of rows,
+// any number of columns, and any units. In other words: it will accept any
+// barrett::units type.
+template<int R, int C, typename Units>
+bool parseDoubles(math::Matrix<R,C, Units>* dest, const std::string& str) {
+	const char* cur = str.c_str();
+	const char* next = cur;
+
+	for (int i = 0; i < dest->size(); ++i) {
+		(*dest)[i] = strtod(cur, (char**) &next);
+		if (cur == next) {
+			return false;
+		} else {
+			cur = next;
+		}
+	}
+
+	// Make sure there are no extra numbers in the string.
+	double ignore = strtod(cur, (char**) &next);
+	(void)ignore;  // Prevent unused variable warnings
+
+	if (cur != next) {
+		return false;
+	}
+
+	return true;
+}
+
+template<size_t DOF, int R, int C, typename Units>
+void moveToStr(systems::Wam<DOF>& wam, math::Matrix<R,C, Units>* dest,
+		const std::string& description, const std::string& str)
+{
+	if (parseDoubles(dest, str)) {
+		std::cout << "Moving to " << description << ": " << *dest << std::endl;
+		wam.moveTo(*dest);
+	} else {
+		printf("ERROR: Please enter exactly %d numbers separated by "
+				"whitespace.\n", dest->size());
+	}
+}
+
+
+
+bool validate_args(int argc, char** argv) {
+	if (argc <2) {
+		std::cout << "Usage: " << argv[0] << " <File Write>"<< " <Filter1 cutoff freq.>"<< std::endl;
+		return false;
+	}
+	return true;
+}
+
+
+
+
+
+template<size_t DOF>
+int wam_main(int argc, char** argv, ProductManager& pm, systems::Wam<DOF>& wam) {
+//	const uint NS=4;
+	const int NSTATES =4;
+
+
+		const int NR = 51;
+		double omega;
+	BARRETT_UNITS_TEMPLATE_TYPEDEFS(DOF);
+
+
+//	typedef typename systems::myController<NSTATES, NR, jp_type, jv_type, jt_type>::gx_type gx_type;
+	typedef typename systems::myController<NSTATES, NR, jp_type, jv_type, jt_type>::criticTorque_type criticTorque_type;
+	typedef typename systems::compTorqueController<NSTATES, NR, jp_type, jv_type, jt_type>::compTorque_type compTorque_type;
+	typedef typename systems::compTorqueController<NSTATES, NR, jp_type, jv_type, jt_type>::unitless_type_jp compTorUless_type;
+	typedef typename systems::errDotGen<jp_type>::unitless_type unitless_type;
+//	typedef typename systems::myController<NSTATES, NR, jp_type, jv_type, jt_type>::unitless_type_jp unitless_type;
+//	typedef typename systems::myController<NSTATES, NR, jp_type, jv_type, jt_type>::vec_type vec_type;
+//	typedef typename systems::virtualSensor<DOF, NSTATES/2>::jv2DOF_type jv2DOF_type;
+	srand(time(NULL));
+	float ThMax1, ThMax3;
+	float ThMin1, ThMin3;
+	ThMax1 = 1.5;
+	ThMin1 = -1.5;
+	ThMax3 = 3.1;
+	ThMin3 = -0.9;
+
+	ThMax1 = .7;
+		ThMin1 = -.7;
+		ThMax3 = 1.5;
+		ThMin3 = -0.6;
+	double ts = pm.getExecutionManager()->getPeriod();
+	std::cout<<"TS:  "<<ts<<std::endl;
+	std::string line;
+	//bool going = true;
+	//bool homed = false;
+	
+	char tmpFile[] = "/tmp/btXXXXXX";
+	if (mkstemp(tmpFile) == -1) {
+		printf("ERROR: Couldn't create temporary file!\n");
+		return 1;
+	}
+
+	if(argc>2){
+		omega = boost::lexical_cast<double>(argv[2]);
+
+	}
+	else{
+		omega =100;
+
+	}
+	std::cout<<"Omega_P1: "<<omega<<std::endl;
+
+	wam.gravityCompensate();
+	std::cout<<"gravity is on"<<std::endl;
+		jp_type jp(0.0), desp(0.0), zerop(0.0);
+
+
+
+
+	// Create our system - this needs our default PID settings from the configuration file
+	const libconfig::Setting& setting = pm.getConfig().lookup(pm.getWamDefaultConfigPath());
+
+
+	systems::myController<NSTATES, NR, jp_type, jv_type, jt_type> criticon(setting["joint_position_control"]);
+	std::cout<<"Rmat:"<<std::endl<<criticon.getRinv()<<std::endl;
+
+	systems::compTorqueController<NSTATES, NR, jp_type, jv_type, jt_type> compCon(setting["joint_position_control"]);
+
+	//==============================================
+		// Joint acc calculator
+		systems::FirstOrderFilter<jv_type> filter;
+		wam.jvFilter.setLowPass(jv_type(omega));
+		filter.setHighPass(jp_type(omega), jp_type(omega));
+		connect(wam.jvOutput, filter.input);
+		pm.getExecutionManager()->startManaging(filter);
+
+
+
+
+
+//		 pm.getExecutionManager()->startManaging(edg);
+//		 systems::virtualSensor<DOF, NSTATES/2> vs;
+//		 connect(wam.jpOutput, vs.jp7DOF);
+
+
+		//=======================================================
+
+
+	systems::Ramp time(pm.getExecutionManager(), 1.0/ts); //slope 1/ts will give increment 1 for eash time step
+//	systems::TupleGrouper<double, jp_type, jt_type, criticTorque_type, unitless_type, unitless_type, vec_type,  vec_type, unitless_type, gx_type > tg;
+//	systems::TupleGrouper<double, jp_type, jt_type, compTorque_type> tg;
+//	systems::TupleGrouper<double, jt_type, compTorUless_type, compTorUless_type > tg;
+
+	systems::TupleGrouper<double, jp_type, jp_type, unitless_type, unitless_type, compTorUless_type, compTorUless_type, compTorUless_type> tg;
+
+	// Connect our feedback
+	        // Create a low level wam object
+	        systems::connect(wam.jpOutput, compCon.feedbackInput);
+	        systems::connect(filter.output, compCon.wamJVIn);
+	        // Register our controller as the default PID controller for Joint Position Control
+//	        wam.supervisoryController.registerConversion(systems::makeIOConversion(criticon.referenceInput, criticon.controlOutput));
+	        wam.supervisoryController.registerConversion(systems::makeIOConversion(compCon.referenceInput, compCon.controlOutput));
+
+
+	connect(time.output, tg.template getInput<0>());
+	connect(wam.jpOutput,tg.template getInput<1>());
+	connect(compCon.pEout, tg.template getInput<5>());
+	connect(compCon.vEout, tg.template getInput<6>());
+	connect(compCon.refOut, tg.template getInput<7>());
+//	connect(compCon.controlOutput, tg.template getInput<2>());
+//	connect(compCon.pEout, tg.template getInput<2>());
+//	connect(compCon.vEout, tg.template getInput<3>());
+//	connect(vs.jv2DOF, tg.template getInput<3>());
+
+	
+//	typedef boost::tuple<double, jp_type, jt_type, criticTorque_type, unitless_type, unitless_type, vec_type,  vec_type, unitless_type, gx_type> tuple_type;
+//	typedef boost::tuple<double, jp_type, jt_type, compTorque_type> tuple_type;
+//	typedef boost::tuple<double, jt_type, compTorUless_type, compTorUless_type> tuple_type;
+	typedef boost::tuple<double, jp_type, jp_type, unitless_type, unitless_type, compTorUless_type, compTorUless_type, compTorUless_type> tuple_type;
+	
+	const size_t PERIOD_MULTIPLIER = 1;
+	systems::PeriodicDataLogger<tuple_type> logger(
+			pm.getExecutionManager(),
+			new log::RealTimeWriter<tuple_type>(tmpFile, PERIOD_MULTIPLIER * pm.getExecutionManager()->getPeriod()),
+			PERIOD_MULTIPLIER);
+
+			jp_type jp1(0.0), jp2(0.0), jp3(0.0), jp4(0.0);
+
+
+			std::cout<<"start moving?"<<std::endl;
+			char ch;
+			std::cin>>ch;
+			if (ch!='y'){
+
+				exit(EXIT_FAILURE);
+			}
+
+
+			for (size_t i=0; i<1; i++){
+				std::cout<<"joint position: "<<jp<<std::endl;
+				jp[1] = (ThMin1 + (ThMax1 - ThMin1) * float(rand())/RAND_MAX);
+				jp[3] = (ThMin3 + (ThMax3 - ThMin3) * float(rand())/RAND_MAX);
+				jp[1] =-0.7;
+				jp[3]= 2.5;
+				 jp1[1] = -1.96354;
+                                jp1[3]= 0.5;
+				jp2[1] = 0.0;
+				jp2[3] = 3.1358;
+				jp3[1] = 1.5;
+				jp3[3] = 3.1358;
+				jp4[1] = 1.5;
+				jp4[3]= 0.0;
+				std::cout<<"moving to: "<<jp<<std::endl;
+				time.setOutput(0.0);
+
+
+
+
+				//new idea===========================
+//				disconnect(tg.template getInput<2>());
+
+
+
+//				wam.supervisoryController.registerConversion(systems::makeIOConversion(criticon.referenceInput, criticon.controlOutput));
+//				connect(criticon.controlOutput, tg.template getInput<2>());
+
+//				wam.supervisoryController.registerConversion(systems::makeIOConversion(compCon.referenceInput, compCon.controlOutput));
+//								connect(compCon.controlOutput, tg.template getInput<2>());
+//				std::cout<<"Default controller engagged"<<std::endl;
+				//======================
+				std::cout<<"make errDot object"<<std::endl;
+				systems::errDotGen<jp_type> edg(wam.getJointPositions(), desp, 1.5, 2.0);
+				std::cout<<"Object created"<<std::endl;
+//				systems::Ramp edgTime(pm.getExecutionManager(), 1.0);
+//
+//				pm.getExecutionManager()->startManaging(edgTime);
+				systems::connect(wam.jpOutput, edg.feedbackInput);
+				systems::connect(time.output, edg.timeInput);
+				connect(edg.refOut, tg.template getInput<2>());
+				connect(edg.errorOut, tg.template getInput<3>());
+				connect(edg.errorDotOut, tg.template getInput<4>());
+//				connect(edgTime.outputedg.timeOut, tg.template getInput<4>());
+
+				//=======================================
+////				time.start();
+//
+//
+				connect(tg.output, logger.input);
+
+
+				compCon.resetRcount();
+				time.start();
+				wam.moveTo(desp);
+				std::cout<<"moved to desp"<<std::endl;
+//				wam.moveHome();
+				systems::disconnect(logger.input);
+				time.stop();
+				usleep(1000000);
+				//waitForEnter();
+			}
+			logger.closeLog();
+			std::cout<<"Logger closed"<<std::endl;
+			//=======================================
+//			wam.supervisoryController.registerConversion(systems::makeIOConversion(wam.jpController.referenceInput, wam.jpController.controlOutput));
+			//==============================================
+			std::cout<<"Default controller in action"<<std::endl;
+
+			 wam.moveHome();
+			// Wait for the user to press Shift-idle
+//			jp[1] = -0.7;
+//			jp[3]= 2.5;
+//			std::cout<<"moving to: "<<jp<<std::endl;
+//			wam.moveTo(jp);
+			std::cout<<"moved to Pos: "<<jp<<std::endl;
+			pm.getSafetyModule()->waitForMode(SafetyModule::IDLE);
+
+
+
+	
+			printf("Logging stopped.\n");
+
+			log::Reader<tuple_type> lr(tmpFile);
+			lr.exportCSV(argv[1]);
+			printf("Output written to %s.\n", argv[1]);
+			std::remove(tmpFile);
+	
+
+	return 0;
+}
+
+

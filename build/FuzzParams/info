@@ -1,0 +1,11 @@
+
+*************** INFO about files in the folder ***********************************
+
+This files contains fuzzy parameters. 
+model_gaussParams.txt contains model identification parameter with data of 10w filter. x is fuzzyfied.
+cost_gaussParams.txt contains cost identification parameters. only x is fuzzufied.
+cons.txt contains mobel A nad B.
+weight.txt contains lqr weights using local lqr weight technique.
+In both of the identification, 7 rules were taken.
+
+***********************************************************************************

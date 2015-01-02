@@ -1,0 +1,42 @@
+cmake_minimum_required(VERSION 2.6)
+project(Mycodes)
+
+set(PROJECT_INCLUDE_DIRS /home/robot/include/)
+
+## libbarrett
+find_package(Barrett REQUIRED)
+include_directories(${BARRETT_INCLUDE_DIRS} ${PROJECT_INCLUDE_DIRS})
+link_directories(${BARRETT_LIBRARY_DIRS} ${PROJECT_INCLUDE_DIRS})
+add_definitions(${BARRETT_DEFINITIONS})
+
+## curses
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR})
+
+
+
+
+function(add_programs)
+	foreach (prog ${ARGV})
+		add_executable(${prog} src/${prog}.cpp)
+		target_link_libraries(${prog} ${BARRETT_LIBRARIES})
+	endforeach()
+endfunction()
+
+add_programs(
+	test_ex04
+	test_Controller
+	test_dataLog
+	computeCost_rt
+	test_dataLog_running
+)
+#add_executable(test_ex04 src/test_ex04.cpp)
+#add_executable(test_Controller src/test_Controller.cpp)
+#add_executable(test_dataLog src/test_dataLog.cpp)
+#add_executable(computeCost_rt src/computeCost_rt)
+#target_link_libraries(test_ex04 ${BARRETT_LIBRARIES})
+#target_link_libraries(test_Controller ${BARRETT_LIBRARIES})
+#target_link_libraries(test_dataLog ${BARRETT_LIBRARIES})
+#target_link_libraries(computeCost_rt ${BARRETT_LIBRARIES})
+
+target_link_libraries(test_ex04 ${CURSES_LIBRARIES})

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/prabhupad/Mycodes/include/constants.h
+iostream
+-
+iomanip
+-
+fstream
+-
+cmath
+-
+new
+-
+cstdlib
+-
+algorithm
+-
+signal.h
+-
+sys/time.h
+-
+ctime
+-
+
+/home/prabhupad/Mycodes/samLibs/constants.cpp
+constants.h
+-
+iostream
+-
+
