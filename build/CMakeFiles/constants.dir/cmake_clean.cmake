@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o"
+  "CMakeFiles/constants.dir/samLibs/constants.cpp.o"
   "libconstants.pdb"
   "libconstants.a"
 )

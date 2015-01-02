@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/prabhupad/Mycodes/include/Detail/samlibs-inl.h
+../include/Detail/samlibs-inl.h
 
-/home/prabhupad/Mycodes/include/samlibs.h
+../include/samlibs.h
 iostream
 -
 fstream
@@ -58,7 +58,7 @@ errno.h
 Detail/samlibs-inl.h
 -
 
-/home/prabhupad/Mycodes/samLibs/samlibs.cpp
+/home/robot/Mycodes/samLibs/samlibs.cpp
 samlibs.h
 -
 

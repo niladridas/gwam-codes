@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prabhupad/Dropbox/writings/Mycodes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prabhupad/Dropbox/writings/Mycodes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles /home/robot/Mycodes/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -329,53 +329,53 @@ wamMoveNonThread/fast:
 	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/build
 .PHONY : wamMoveNonThread/fast
 
-home/prabhupad/Mycodes/samLibs/constants.o: home/prabhupad/Mycodes/samLibs/constants.cpp.o
-.PHONY : home/prabhupad/Mycodes/samLibs/constants.o
+samLibs/constants.o: samLibs/constants.cpp.o
+.PHONY : samLibs/constants.o
 
 # target to build an object file
-home/prabhupad/Mycodes/samLibs/constants.cpp.o:
-	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o
-.PHONY : home/prabhupad/Mycodes/samLibs/constants.cpp.o
+samLibs/constants.cpp.o:
+	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/samLibs/constants.cpp.o
+.PHONY : samLibs/constants.cpp.o
 
-home/prabhupad/Mycodes/samLibs/constants.i: home/prabhupad/Mycodes/samLibs/constants.cpp.i
-.PHONY : home/prabhupad/Mycodes/samLibs/constants.i
+samLibs/constants.i: samLibs/constants.cpp.i
+.PHONY : samLibs/constants.i
 
 # target to preprocess a source file
-home/prabhupad/Mycodes/samLibs/constants.cpp.i:
-	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.i
-.PHONY : home/prabhupad/Mycodes/samLibs/constants.cpp.i
+samLibs/constants.cpp.i:
+	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/samLibs/constants.cpp.i
+.PHONY : samLibs/constants.cpp.i
 
-home/prabhupad/Mycodes/samLibs/constants.s: home/prabhupad/Mycodes/samLibs/constants.cpp.s
-.PHONY : home/prabhupad/Mycodes/samLibs/constants.s
+samLibs/constants.s: samLibs/constants.cpp.s
+.PHONY : samLibs/constants.s
 
 # target to generate assembly for a file
-home/prabhupad/Mycodes/samLibs/constants.cpp.s:
-	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.s
-.PHONY : home/prabhupad/Mycodes/samLibs/constants.cpp.s
+samLibs/constants.cpp.s:
+	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/samLibs/constants.cpp.s
+.PHONY : samLibs/constants.cpp.s
 
-home/prabhupad/Mycodes/samLibs/samlibs.o: home/prabhupad/Mycodes/samLibs/samlibs.cpp.o
-.PHONY : home/prabhupad/Mycodes/samLibs/samlibs.o
+samLibs/samlibs.o: samLibs/samlibs.cpp.o
+.PHONY : samLibs/samlibs.o
 
 # target to build an object file
-home/prabhupad/Mycodes/samLibs/samlibs.cpp.o:
-	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o
-.PHONY : home/prabhupad/Mycodes/samLibs/samlibs.cpp.o
+samLibs/samlibs.cpp.o:
+	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o
+.PHONY : samLibs/samlibs.cpp.o
 
-home/prabhupad/Mycodes/samLibs/samlibs.i: home/prabhupad/Mycodes/samLibs/samlibs.cpp.i
-.PHONY : home/prabhupad/Mycodes/samLibs/samlibs.i
+samLibs/samlibs.i: samLibs/samlibs.cpp.i
+.PHONY : samLibs/samlibs.i
 
 # target to preprocess a source file
-home/prabhupad/Mycodes/samLibs/samlibs.cpp.i:
-	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.i
-.PHONY : home/prabhupad/Mycodes/samLibs/samlibs.cpp.i
+samLibs/samlibs.cpp.i:
+	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i
+.PHONY : samLibs/samlibs.cpp.i
 
-home/prabhupad/Mycodes/samLibs/samlibs.s: home/prabhupad/Mycodes/samLibs/samlibs.cpp.s
-.PHONY : home/prabhupad/Mycodes/samLibs/samlibs.s
+samLibs/samlibs.s: samLibs/samlibs.cpp.s
+.PHONY : samLibs/samlibs.s
 
 # target to generate assembly for a file
-home/prabhupad/Mycodes/samLibs/samlibs.cpp.s:
-	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.s
-.PHONY : home/prabhupad/Mycodes/samLibs/samlibs.cpp.s
+samLibs/samlibs.cpp.s:
+	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s
+.PHONY : samLibs/samlibs.cpp.s
 
 src/collectData.o: src/collectData.cpp.o
 .PHONY : src/collectData.o
@@ -787,12 +787,12 @@ help:
 	@echo "... test_gmm"
 	@echo "... test_myController"
 	@echo "... wamMoveNonThread"
-	@echo "... home/prabhupad/Mycodes/samLibs/constants.o"
-	@echo "... home/prabhupad/Mycodes/samLibs/constants.i"
-	@echo "... home/prabhupad/Mycodes/samLibs/constants.s"
-	@echo "... home/prabhupad/Mycodes/samLibs/samlibs.o"
-	@echo "... home/prabhupad/Mycodes/samLibs/samlibs.i"
-	@echo "... home/prabhupad/Mycodes/samLibs/samlibs.s"
+	@echo "... samLibs/constants.o"
+	@echo "... samLibs/constants.i"
+	@echo "... samLibs/constants.s"
+	@echo "... samLibs/samlibs.o"
+	@echo "... samLibs/samlibs.i"
+	@echo "... samLibs/samlibs.s"
 	@echo "... src/collectData.o"
 	@echo "... src/collectData.i"
 	@echo "... src/collectData.s"

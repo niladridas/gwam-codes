@@ -1,2 +1,2 @@
-/usr/bin/ar cr libsamlibs.a  CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o
+/usr/bin/ar cr libsamlibs.a  CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o
 /usr/bin/ranlib libsamlibs.a

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prabhupad/Dropbox/writings/Mycodes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prabhupad/Dropbox/writings/Mycodes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_Controller.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/test_Controller.dir/flags.make
 
 CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o: CMakeFiles/test_Controller.dir/flags.make
 CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o: ../src/test_Controller.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o -c /home/prabhupad/Dropbox/writings/Mycodes/src/test_Controller.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o -c /home/robot/Mycodes/src/test_Controller.cpp
 
 CMakeFiles/test_Controller.dir/src/test_Controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_Controller.dir/src/test_Controller.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/prabhupad/Dropbox/writings/Mycodes/src/test_Controller.cpp > CMakeFiles/test_Controller.dir/src/test_Controller.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/test_Controller.cpp > CMakeFiles/test_Controller.dir/src/test_Controller.cpp.i
 
 CMakeFiles/test_Controller.dir/src/test_Controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_Controller.dir/src/test_Controller.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/prabhupad/Dropbox/writings/Mycodes/src/test_Controller.cpp -o CMakeFiles/test_Controller.dir/src/test_Controller.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/test_Controller.cpp -o CMakeFiles/test_Controller.dir/src/test_Controller.cpp.s
 
 CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o.requires:
 .PHONY : CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o.provides: CMakeFiles/te
 .PHONY : CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o.provides
 
 CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o.provides.build: CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o
+.PHONY : CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o.provides.build
 
 # Object files for target test_Controller
 test_Controller_OBJECTS = \
@@ -77,12 +78,12 @@ test_Controller_OBJECTS = \
 test_Controller_EXTERNAL_OBJECTS =
 
 test_Controller: CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o
-test_Controller: /usr/lib/libboost_thread-mt.so
+test_Controller: /usr/local/lib/libboost_thread.so
 test_Controller: /usr/local/lib/libboost_python.so
-test_Controller: /usr/lib/libnative.so
-test_Controller: /usr/lib/libxenomai.so
-test_Controller: /usr/lib/librtdm.so
-test_Controller: /usr/lib/libpython2.7.so
+test_Controller: /usr/xenomai/lib/libnative.so
+test_Controller: /usr/xenomai/lib/libxenomai.so
+test_Controller: /usr/xenomai/lib/librtdm.so
+test_Controller: /usr/lib/libpython2.6.so
 test_Controller: libconstants.a
 test_Controller: libsamlibs.a
 test_Controller: CMakeFiles/test_Controller.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/test_Controller.dir/clean:
 .PHONY : CMakeFiles/test_Controller.dir/clean
 
 CMakeFiles/test_Controller.dir/depend:
-	cd /home/prabhupad/Dropbox/writings/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prabhupad/Dropbox/writings/Mycodes /home/prabhupad/Dropbox/writings/Mycodes /home/prabhupad/Dropbox/writings/Mycodes/build /home/prabhupad/Dropbox/writings/Mycodes/build /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles/test_Controller.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/test_Controller.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_Controller.dir/depend
 

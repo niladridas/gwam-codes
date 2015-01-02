@@ -16,7 +16,7 @@ preinstall:
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -44,20 +44,20 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prabhupad/Dropbox/writings/Mycodes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prabhupad/Dropbox/writings/Mycodes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/collectData.dir
 
 # All Build rule for target.
-CMakeFiles/collectData.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/collectData.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/collectData.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/collectData.dir/build.make CMakeFiles/collectData.dir/depend
 	$(MAKE) -f CMakeFiles/collectData.dir/build.make CMakeFiles/collectData.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  1
 	@echo "Built target collectData"
 .PHONY : CMakeFiles/collectData.dir/all
 
@@ -67,9 +67,9 @@ all: CMakeFiles/collectData.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collectData.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/collectData.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/collectData.dir/rule
 
 # Convenience name for target.
@@ -89,11 +89,11 @@ clean: CMakeFiles/collectData.dir/clean
 # Target rules for target CMakeFiles/collectData2.dir
 
 # All Build rule for target.
-CMakeFiles/collectData2.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/collectData2.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/collectData2.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/collectData2.dir/build.make CMakeFiles/collectData2.dir/depend
 	$(MAKE) -f CMakeFiles/collectData2.dir/build.make CMakeFiles/collectData2.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  2
 	@echo "Built target collectData2"
 .PHONY : CMakeFiles/collectData2.dir/all
 
@@ -103,9 +103,9 @@ all: CMakeFiles/collectData2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collectData2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/collectData2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/collectData2.dir/rule
 
 # Convenience name for target.
@@ -125,11 +125,11 @@ clean: CMakeFiles/collectData2.dir/clean
 # Target rules for target CMakeFiles/collectData3.dir
 
 # All Build rule for target.
-CMakeFiles/collectData3.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/collectData3.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/collectData3.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/collectData3.dir/build.make CMakeFiles/collectData3.dir/depend
 	$(MAKE) -f CMakeFiles/collectData3.dir/build.make CMakeFiles/collectData3.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  3
 	@echo "Built target collectData3"
 .PHONY : CMakeFiles/collectData3.dir/all
 
@@ -139,9 +139,9 @@ all: CMakeFiles/collectData3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collectData3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/collectData3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/collectData3.dir/rule
 
 # Convenience name for target.
@@ -161,11 +161,11 @@ clean: CMakeFiles/collectData3.dir/clean
 # Target rules for target CMakeFiles/collectData_onlyB.dir
 
 # All Build rule for target.
-CMakeFiles/collectData_onlyB.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/collectData_onlyB.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/collectData_onlyB.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/collectData_onlyB.dir/build.make CMakeFiles/collectData_onlyB.dir/depend
 	$(MAKE) -f CMakeFiles/collectData_onlyB.dir/build.make CMakeFiles/collectData_onlyB.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  4
 	@echo "Built target collectData_onlyB"
 .PHONY : CMakeFiles/collectData_onlyB.dir/all
 
@@ -175,9 +175,9 @@ all: CMakeFiles/collectData_onlyB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/collectData_onlyB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/collectData_onlyB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/collectData_onlyB.dir/rule
 
 # Convenience name for target.
@@ -200,7 +200,7 @@ clean: CMakeFiles/collectData_onlyB.dir/clean
 CMakeFiles/constants.dir/all:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/depend
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  5
 	@echo "Built target constants"
 .PHONY : CMakeFiles/constants.dir/all
 
@@ -210,9 +210,9 @@ all: CMakeFiles/constants.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/constants.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/constants.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/constants.dir/rule
 
 # Convenience name for target.
@@ -232,11 +232,11 @@ clean: CMakeFiles/constants.dir/clean
 # Target rules for target CMakeFiles/dataCollector_myController.dir
 
 # All Build rule for target.
-CMakeFiles/dataCollector_myController.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/dataCollector_myController.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/dataCollector_myController.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/dataCollector_myController.dir/build.make CMakeFiles/dataCollector_myController.dir/depend
 	$(MAKE) -f CMakeFiles/dataCollector_myController.dir/build.make CMakeFiles/dataCollector_myController.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  6
 	@echo "Built target dataCollector_myController"
 .PHONY : CMakeFiles/dataCollector_myController.dir/all
 
@@ -246,9 +246,9 @@ all: CMakeFiles/dataCollector_myController.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dataCollector_myController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dataCollector_myController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/dataCollector_myController.dir/rule
 
 # Convenience name for target.
@@ -268,11 +268,11 @@ clean: CMakeFiles/dataCollector_myController.dir/clean
 # Target rules for target CMakeFiles/dataLog_jaType.dir
 
 # All Build rule for target.
-CMakeFiles/dataLog_jaType.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/dataLog_jaType.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/dataLog_jaType.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/dataLog_jaType.dir/build.make CMakeFiles/dataLog_jaType.dir/depend
 	$(MAKE) -f CMakeFiles/dataLog_jaType.dir/build.make CMakeFiles/dataLog_jaType.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  7
 	@echo "Built target dataLog_jaType"
 .PHONY : CMakeFiles/dataLog_jaType.dir/all
 
@@ -282,9 +282,9 @@ all: CMakeFiles/dataLog_jaType.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dataLog_jaType.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dataLog_jaType.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/dataLog_jaType.dir/rule
 
 # Convenience name for target.
@@ -304,11 +304,11 @@ clean: CMakeFiles/dataLog_jaType.dir/clean
 # Target rules for target CMakeFiles/gmm_traj_test.dir
 
 # All Build rule for target.
-CMakeFiles/gmm_traj_test.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/gmm_traj_test.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/gmm_traj_test.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/gmm_traj_test.dir/build.make CMakeFiles/gmm_traj_test.dir/depend
 	$(MAKE) -f CMakeFiles/gmm_traj_test.dir/build.make CMakeFiles/gmm_traj_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  8
 	@echo "Built target gmm_traj_test"
 .PHONY : CMakeFiles/gmm_traj_test.dir/all
 
@@ -318,9 +318,9 @@ all: CMakeFiles/gmm_traj_test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gmm_traj_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gmm_traj_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/gmm_traj_test.dir/rule
 
 # Convenience name for target.
@@ -340,11 +340,11 @@ clean: CMakeFiles/gmm_traj_test.dir/clean
 # Target rules for target CMakeFiles/hand_test.dir
 
 # All Build rule for target.
-CMakeFiles/hand_test.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/hand_test.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/hand_test.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/hand_test.dir/build.make CMakeFiles/hand_test.dir/depend
 	$(MAKE) -f CMakeFiles/hand_test.dir/build.make CMakeFiles/hand_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  9
 	@echo "Built target hand_test"
 .PHONY : CMakeFiles/hand_test.dir/all
 
@@ -354,9 +354,9 @@ all: CMakeFiles/hand_test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hand_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hand_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/hand_test.dir/rule
 
 # Convenience name for target.
@@ -376,11 +376,11 @@ clean: CMakeFiles/hand_test.dir/clean
 # Target rules for target CMakeFiles/playTenisLog.dir
 
 # All Build rule for target.
-CMakeFiles/playTenisLog.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/playTenisLog.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/playTenisLog.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/playTenisLog.dir/build.make CMakeFiles/playTenisLog.dir/depend
 	$(MAKE) -f CMakeFiles/playTenisLog.dir/build.make CMakeFiles/playTenisLog.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  10
 	@echo "Built target playTenisLog"
 .PHONY : CMakeFiles/playTenisLog.dir/all
 
@@ -390,9 +390,9 @@ all: CMakeFiles/playTenisLog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/playTenisLog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/playTenisLog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/playTenisLog.dir/rule
 
 # Convenience name for target.
@@ -412,11 +412,11 @@ clean: CMakeFiles/playTenisLog.dir/clean
 # Target rules for target CMakeFiles/playTenisLog_nilu.dir
 
 # All Build rule for target.
-CMakeFiles/playTenisLog_nilu.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/playTenisLog_nilu.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/playTenisLog_nilu.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/playTenisLog_nilu.dir/build.make CMakeFiles/playTenisLog_nilu.dir/depend
 	$(MAKE) -f CMakeFiles/playTenisLog_nilu.dir/build.make CMakeFiles/playTenisLog_nilu.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  11
 	@echo "Built target playTenisLog_nilu"
 .PHONY : CMakeFiles/playTenisLog_nilu.dir/all
 
@@ -426,9 +426,9 @@ all: CMakeFiles/playTenisLog_nilu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/playTenisLog_nilu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/playTenisLog_nilu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/playTenisLog_nilu.dir/rule
 
 # Convenience name for target.
@@ -451,7 +451,7 @@ clean: CMakeFiles/playTenisLog_nilu.dir/clean
 CMakeFiles/samlibs.dir/all:
 	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/depend
 	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  12
 	@echo "Built target samlibs"
 .PHONY : CMakeFiles/samlibs.dir/all
 
@@ -461,9 +461,9 @@ all: CMakeFiles/samlibs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/samlibs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/samlibs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/samlibs.dir/rule
 
 # Convenience name for target.
@@ -483,11 +483,11 @@ clean: CMakeFiles/samlibs.dir/clean
 # Target rules for target CMakeFiles/test_Controller.dir
 
 # All Build rule for target.
-CMakeFiles/test_Controller.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/test_Controller.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/test_Controller.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/test_Controller.dir/build.make CMakeFiles/test_Controller.dir/depend
 	$(MAKE) -f CMakeFiles/test_Controller.dir/build.make CMakeFiles/test_Controller.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  13
 	@echo "Built target test_Controller"
 .PHONY : CMakeFiles/test_Controller.dir/all
 
@@ -497,9 +497,9 @@ all: CMakeFiles/test_Controller.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_Controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_Controller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_Controller.dir/rule
 
 # Convenience name for target.
@@ -519,11 +519,11 @@ clean: CMakeFiles/test_Controller.dir/clean
 # Target rules for target CMakeFiles/test_Controller_compController.dir
 
 # All Build rule for target.
-CMakeFiles/test_Controller_compController.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/test_Controller_compController.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/test_Controller_compController.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/test_Controller_compController.dir/build.make CMakeFiles/test_Controller_compController.dir/depend
 	$(MAKE) -f CMakeFiles/test_Controller_compController.dir/build.make CMakeFiles/test_Controller_compController.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  14
 	@echo "Built target test_Controller_compController"
 .PHONY : CMakeFiles/test_Controller_compController.dir/all
 
@@ -533,9 +533,9 @@ all: CMakeFiles/test_Controller_compController.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_Controller_compController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_Controller_compController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_Controller_compController.dir/rule
 
 # Convenience name for target.
@@ -555,11 +555,11 @@ clean: CMakeFiles/test_Controller_compController.dir/clean
 # Target rules for target CMakeFiles/test_dataLog.dir
 
 # All Build rule for target.
-CMakeFiles/test_dataLog.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/test_dataLog.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/test_dataLog.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/test_dataLog.dir/build.make CMakeFiles/test_dataLog.dir/depend
 	$(MAKE) -f CMakeFiles/test_dataLog.dir/build.make CMakeFiles/test_dataLog.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  15
 	@echo "Built target test_dataLog"
 .PHONY : CMakeFiles/test_dataLog.dir/all
 
@@ -569,9 +569,9 @@ all: CMakeFiles/test_dataLog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_dataLog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_dataLog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_dataLog.dir/rule
 
 # Convenience name for target.
@@ -591,11 +591,11 @@ clean: CMakeFiles/test_dataLog.dir/clean
 # Target rules for target CMakeFiles/test_gmm.dir
 
 # All Build rule for target.
-CMakeFiles/test_gmm.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/test_gmm.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/test_gmm.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/test_gmm.dir/build.make CMakeFiles/test_gmm.dir/depend
 	$(MAKE) -f CMakeFiles/test_gmm.dir/build.make CMakeFiles/test_gmm.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  16
 	@echo "Built target test_gmm"
 .PHONY : CMakeFiles/test_gmm.dir/all
 
@@ -605,9 +605,9 @@ all: CMakeFiles/test_gmm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_gmm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_gmm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_gmm.dir/rule
 
 # Convenience name for target.
@@ -627,11 +627,11 @@ clean: CMakeFiles/test_gmm.dir/clean
 # Target rules for target CMakeFiles/test_myController.dir
 
 # All Build rule for target.
-CMakeFiles/test_myController.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/test_myController.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/test_myController.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/test_myController.dir/build.make CMakeFiles/test_myController.dir/depend
 	$(MAKE) -f CMakeFiles/test_myController.dir/build.make CMakeFiles/test_myController.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  17
 	@echo "Built target test_myController"
 .PHONY : CMakeFiles/test_myController.dir/all
 
@@ -641,9 +641,9 @@ all: CMakeFiles/test_myController.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_myController.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_myController.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_myController.dir/rule
 
 # Convenience name for target.
@@ -663,11 +663,11 @@ clean: CMakeFiles/test_myController.dir/clean
 # Target rules for target CMakeFiles/wamMoveNonThread.dir
 
 # All Build rule for target.
-CMakeFiles/wamMoveNonThread.dir/all: CMakeFiles/samlibs.dir/all
 CMakeFiles/wamMoveNonThread.dir/all: CMakeFiles/constants.dir/all
+CMakeFiles/wamMoveNonThread.dir/all: CMakeFiles/samlibs.dir/all
 	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/depend
 	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles  18
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles  18
 	@echo "Built target wamMoveNonThread"
 .PHONY : CMakeFiles/wamMoveNonThread.dir/all
 
@@ -677,9 +677,9 @@ all: CMakeFiles/wamMoveNonThread.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/wamMoveNonThread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/wamMoveNonThread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
 .PHONY : CMakeFiles/wamMoveNonThread.dir/rule
 
 # Convenience name for target.

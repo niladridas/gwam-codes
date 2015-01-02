@@ -34,7 +34,6 @@ int main(){
 // Running simulation with Ts = 8 ms and assuming that the robot is able to move
 isl::GMM G(0.01, 0.01);
 Eigen::VectorXd tmp_xi(3);
-Eigen::VectorXd tmp_xi_tmp(3);
 tmp_xi << 0.0976,0.1701,0.1457;
 G.calculate_model_output(tmp_xi);
 Eigen::VectorXd xi_star(3);
@@ -44,25 +43,7 @@ int count = 0;
 while ((tmp_xi -xi_star).norm() >= 0.10 && count <= 10000000)
 {
     G.calculate_model_output(tmp_xi);
-
-    while (0.008*G.output.norm() < 0.0548)
-    {
-    tmp_xi_tmp = tmp_xi_tmp + 0.008*G.output;
-    }
-    tmp_xi = tmp_xi_tmp;
-
-    if (0.008*G.output.norm() > 0.1)
-       {
-       	tmp_xi(0) = tmp_xi(0) + 0.1;
-       	tmp_xi(1) = tmp_xi(1) + 0.1;
-       	tmp_xi(2) = tmp_xi(2) + 0.1;
-       }
-
-    if (0.0548 <= 0.008*G.output.norm() && 0.008*G.output.norm() <= 0.1)
-           {
-           	tmp_xi = tmp_xi + 0.008*G.output;
-           }
-
+    tmp_xi = tmp_xi + 0.008*G.output;
     ff << tmp_xi.transpose() << " " << G.foutput.transpose() <<  " " << G.uoutput.transpose() << "\n";
     count++;
 }

@@ -13,7 +13,7 @@ GMM::GMM(double Rho_0, double K) :
 				Eigen::MatrixXd()), xistar_trn(Eigen::VectorXd()), P_0_data(
 				Eigen::MatrixXd()), P_total_data(Eigen::MatrixXd()), Mu(
 				Eigen::VectorXd()), f_hat(Eigen::VectorXd()), grad_val(
-				Eigen::VectorXd()),output(Eigen::VectorXd()), foutput(Eigen::VectorXd()),uoutput(Eigen::VectorXd()), num_inp(0), num_op(
+				Eigen::VectorXd()), output(Eigen::VectorXd()), num_inp(0), num_op(
 				0), num_priors(0), num_lyp_asym_copont(0), RHO_0(Rho_0), K_(K) {
 
 	pi = boost::math::constants::pi<double>();

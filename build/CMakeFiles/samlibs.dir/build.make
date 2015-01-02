@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prabhupad/Dropbox/writings/Mycodes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prabhupad/Dropbox/writings/Mycodes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/samlibs.dir/depend.make
@@ -46,37 +46,38 @@ include CMakeFiles/samlibs.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/samlibs.dir/flags.make
 
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o: CMakeFiles/samlibs.dir/flags.make
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o: /home/prabhupad/Mycodes/samLibs/samlibs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o -c /home/prabhupad/Mycodes/samLibs/samlibs.cpp
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o: CMakeFiles/samlibs.dir/flags.make
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o: ../samLibs/samlibs.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o -c /home/robot/Mycodes/samLibs/samlibs.cpp
 
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/prabhupad/Mycodes/samLibs/samlibs.cpp > CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.i
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/samLibs/samlibs.cpp > CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i
 
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/prabhupad/Mycodes/samLibs/samlibs.cpp -o CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.s
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/samLibs/samlibs.cpp -o CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s
 
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.requires:
-.PHONY : CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.requires
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.requires:
+.PHONY : CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.requires
 
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.provides: CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.requires
-	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.provides.build
-.PHONY : CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.provides
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.provides: CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.requires
+	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.provides.build
+.PHONY : CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.provides
 
-CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.provides.build: CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o
+CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.provides.build: CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o
+.PHONY : CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.provides.build
 
 # Object files for target samlibs
 samlibs_OBJECTS = \
-"CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o"
+"CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o"
 
 # External object files for target samlibs
 samlibs_EXTERNAL_OBJECTS =
 
-libsamlibs.a: CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o
+libsamlibs.a: CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o
 libsamlibs.a: CMakeFiles/samlibs.dir/build.make
 libsamlibs.a: CMakeFiles/samlibs.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libsamlibs.a"
@@ -87,7 +88,7 @@ libsamlibs.a: CMakeFiles/samlibs.dir/link.txt
 CMakeFiles/samlibs.dir/build: libsamlibs.a
 .PHONY : CMakeFiles/samlibs.dir/build
 
-CMakeFiles/samlibs.dir/requires: CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o.requires
+CMakeFiles/samlibs.dir/requires: CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.requires
 .PHONY : CMakeFiles/samlibs.dir/requires
 
 CMakeFiles/samlibs.dir/clean:
@@ -95,6 +96,6 @@ CMakeFiles/samlibs.dir/clean:
 .PHONY : CMakeFiles/samlibs.dir/clean
 
 CMakeFiles/samlibs.dir/depend:
-	cd /home/prabhupad/Dropbox/writings/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prabhupad/Dropbox/writings/Mycodes /home/prabhupad/Dropbox/writings/Mycodes /home/prabhupad/Dropbox/writings/Mycodes/build /home/prabhupad/Dropbox/writings/Mycodes/build /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles/samlibs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/samlibs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/samlibs.dir/depend
 

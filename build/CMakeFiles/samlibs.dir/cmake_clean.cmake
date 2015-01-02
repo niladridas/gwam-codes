@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/samlibs.dir/home/prabhupad/Mycodes/samLibs/samlibs.cpp.o"
+  "CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o"
   "libsamlibs.pdb"
   "libsamlibs.a"
 )

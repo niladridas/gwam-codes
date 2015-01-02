@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/prabhupad/Dropbox/writings/Mycodes/src/test_gmm.cpp
-samlibs.h
--
-GMM.h
--
+../include/Detail/GMM-inl.h
 
-/home/prabhupad/Mycodes/include/Detail/GMM-inl.h
+../include/Detail/samlibs-inl.h
 
-/home/prabhupad/Mycodes/include/Detail/samlibs-inl.h
-
-/home/prabhupad/Mycodes/include/GMM.h
+../include/GMM.h
 iostream
 -
 samlibs.h
@@ -32,7 +26,7 @@ boost/math/constants/constants.hpp
 Detail/GMM-inl.h
 -
 
-/home/prabhupad/Mycodes/include/samlibs.h
+../include/samlibs.h
 iostream
 -
 fstream
@@ -80,6 +74,12 @@ errno.h
 /usr/include/eigen3/Eigen/Core
 -
 Detail/samlibs-inl.h
+-
+
+/home/robot/Mycodes/src/test_gmm.cpp
+samlibs.h
+-
+GMM.h
 -
 
 /usr/include/eigen3/Eigen/Core

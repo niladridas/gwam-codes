@@ -1,0 +1,2 @@
+/usr/bin/ar cr libDynamics.a  CMakeFiles/Dynamics.dir/samLibs/Dynamics.cpp.o
+/usr/bin/ranlib libDynamics.a

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prabhupad/Dropbox/writings/Mycodes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prabhupad/Dropbox/writings/Mycodes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/constants.dir/depend.make
@@ -46,37 +46,38 @@ include CMakeFiles/constants.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/constants.dir/flags.make
 
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o: CMakeFiles/constants.dir/flags.make
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o: /home/prabhupad/Mycodes/samLibs/constants.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o -c /home/prabhupad/Mycodes/samLibs/constants.cpp
+CMakeFiles/constants.dir/samLibs/constants.cpp.o: CMakeFiles/constants.dir/flags.make
+CMakeFiles/constants.dir/samLibs/constants.cpp.o: ../samLibs/constants.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/constants.dir/samLibs/constants.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/constants.dir/samLibs/constants.cpp.o -c /home/robot/Mycodes/samLibs/constants.cpp
 
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/prabhupad/Mycodes/samLibs/constants.cpp > CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.i
+CMakeFiles/constants.dir/samLibs/constants.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/constants.dir/samLibs/constants.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/samLibs/constants.cpp > CMakeFiles/constants.dir/samLibs/constants.cpp.i
 
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/prabhupad/Mycodes/samLibs/constants.cpp -o CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.s
+CMakeFiles/constants.dir/samLibs/constants.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/constants.dir/samLibs/constants.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/samLibs/constants.cpp -o CMakeFiles/constants.dir/samLibs/constants.cpp.s
 
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.requires:
-.PHONY : CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.requires
+CMakeFiles/constants.dir/samLibs/constants.cpp.o.requires:
+.PHONY : CMakeFiles/constants.dir/samLibs/constants.cpp.o.requires
 
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.provides: CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.requires
-	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.provides.build
-.PHONY : CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.provides
+CMakeFiles/constants.dir/samLibs/constants.cpp.o.provides: CMakeFiles/constants.dir/samLibs/constants.cpp.o.requires
+	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/samLibs/constants.cpp.o.provides.build
+.PHONY : CMakeFiles/constants.dir/samLibs/constants.cpp.o.provides
 
-CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.provides.build: CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o
+CMakeFiles/constants.dir/samLibs/constants.cpp.o.provides.build: CMakeFiles/constants.dir/samLibs/constants.cpp.o
+.PHONY : CMakeFiles/constants.dir/samLibs/constants.cpp.o.provides.build
 
 # Object files for target constants
 constants_OBJECTS = \
-"CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o"
+"CMakeFiles/constants.dir/samLibs/constants.cpp.o"
 
 # External object files for target constants
 constants_EXTERNAL_OBJECTS =
 
-libconstants.a: CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o
+libconstants.a: CMakeFiles/constants.dir/samLibs/constants.cpp.o
 libconstants.a: CMakeFiles/constants.dir/build.make
 libconstants.a: CMakeFiles/constants.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libconstants.a"
@@ -87,7 +88,7 @@ libconstants.a: CMakeFiles/constants.dir/link.txt
 CMakeFiles/constants.dir/build: libconstants.a
 .PHONY : CMakeFiles/constants.dir/build
 
-CMakeFiles/constants.dir/requires: CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o.requires
+CMakeFiles/constants.dir/requires: CMakeFiles/constants.dir/samLibs/constants.cpp.o.requires
 .PHONY : CMakeFiles/constants.dir/requires
 
 CMakeFiles/constants.dir/clean:
@@ -95,6 +96,6 @@ CMakeFiles/constants.dir/clean:
 .PHONY : CMakeFiles/constants.dir/clean
 
 CMakeFiles/constants.dir/depend:
-	cd /home/prabhupad/Dropbox/writings/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prabhupad/Dropbox/writings/Mycodes /home/prabhupad/Dropbox/writings/Mycodes /home/prabhupad/Dropbox/writings/Mycodes/build /home/prabhupad/Dropbox/writings/Mycodes/build /home/prabhupad/Dropbox/writings/Mycodes/build/CMakeFiles/constants.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/constants.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/constants.dir/depend
 

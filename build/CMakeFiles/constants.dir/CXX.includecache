@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/prabhupad/Mycodes/include/constants.h
+../include/constants.h
 iostream
 -
 iomanip
@@ -28,7 +28,7 @@ sys/time.h
 ctime
 -
 
-/home/prabhupad/Mycodes/samLibs/constants.cpp
+/home/robot/Mycodes/samLibs/constants.cpp
 constants.h
 -
 iostream

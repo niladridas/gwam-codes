@@ -46,10 +46,14 @@ private:
 	cp_type cp_tmp;
 	cv_type cv_tmp;
 	vec_3D cp;
-	double Ts;
+	double Ts, gain;
 
 protected:
 	void operate();
+public:
+	void start(const cp_type& curr_cp);
+	void stop();
+
 
 
 private:

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libQuadTS.a  CMakeFiles/QuadTS.dir/samLibs/QuadTS.cpp.o
+/usr/bin/ranlib libQuadTS.a

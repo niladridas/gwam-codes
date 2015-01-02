@@ -1,2 +1,2 @@
-/usr/bin/ar cr libconstants.a  CMakeFiles/constants.dir/home/prabhupad/Mycodes/samLibs/constants.cpp.o
+/usr/bin/ar cr libconstants.a  CMakeFiles/constants.dir/samLibs/constants.cpp.o
 /usr/bin/ranlib libconstants.a
