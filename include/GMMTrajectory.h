@@ -31,28 +31,37 @@ class GMMTrajectory: public systems::System {
 public:
 	explicit GMMTrajectory(systems::ExecutionManager* em,double Rho_0, double K,const std::string& sysName="GMMTrajectory");
 	virtual ~GMMTrajectory();
-	typedef Eigen::VectorXd vec_3D;
+	typedef Eigen::VectorXd vecXD;
 
 public:
 	Input<cp_type> cp_input;
 	Output<cp_type> cp_output;
 	Output<cv_type> cv_output;
+	/// Debug
+	Output<cv_type> gmm_out;
+	Output<double> diff_norm_out;
 protected:
 	Output<cp_type>::Value* cp_out_val;
     Output<cv_type>::Value* cv_out_val;
+    Output<cv_type>::Value* gmm_out_val;
+    Output<double>::Value* diff_norm_out_val;
 
 private:
 	GMM gmm;
+	math::FirstOrderFilter<cv_type> cvFilter;
 	cp_type cp_tmp;
-	cv_type cv_tmp;
-	vec_3D cp;
-	double Ts, gain;
+	cv_type cv_tmp, gmm_cv_tmp;
+	vecXD cp_ref, cp_real;
+	double Ts, gain, nrm, difnrm;
+	static const double MAX_VEL = 0.07;
 
 protected:
-	void operate();
+	virtual void operate();
 public:
 	void start(const cp_type& curr_cp);
 	void stop();
+	void setLowpass(double omega);
+
 
 
 

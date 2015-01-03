@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(Mycodes)
 
-set(MY_CODES_DIRS /home/robot/Mycodes)
+set(MY_CODES_DIRS /home/niladriisl/eclipse_workspace/gwam-codes/)
 #set(SAM_LIBS QuadTS constants)
 set(SAM_LIBS constants samlibs)
 

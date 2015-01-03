@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/robot/Mycodes/src/hand_test.cpp" "/home/robot/Mycodes/build/CMakeFiles/hand_test.dir/src/hand_test.cpp.o"
+  "/home/niladriisl/eclipse_workspace/gwam-codes/src/hand_test.cpp" "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/hand_test.dir/src/hand_test.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,6 +17,6 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/robot/Mycodes/build/CMakeFiles/constants.dir/DependInfo.cmake"
-  "/home/robot/Mycodes/build/CMakeFiles/samlibs.dir/DependInfo.cmake"
+  "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/constants.dir/DependInfo.cmake"
+  "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/samlibs.dir/DependInfo.cmake"
   )

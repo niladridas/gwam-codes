@@ -26,7 +26,7 @@
 <pathentry include="/usr/local/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include/xenomai" kind="inc" path="" system="true"/>
 <pathentry include="/usr/local/include/eigen2" kind="inc" path="" system="true"/>
-<pathentry include="/home/prabhupad/Dropbox/writings/Mycodes/include" kind="inc" path="" system="true"/>
+<pathentry include="/home/niladriisl/eclipse_workspace/gwam-codes/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include" kind="inc" path="" system="true"/>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
@@ -47,14 +47,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] collectData" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>collectData</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] collectData" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -75,14 +75,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] collectData2" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>collectData2</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] collectData2" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData2.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData2.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -103,14 +103,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] collectData3" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>collectData3</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] collectData3" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData3.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData3.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -131,14 +131,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] collectData_onlyB" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>collectData_onlyB</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] collectData_onlyB" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData_onlyB.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/collectData_onlyB.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -159,14 +159,14 @@
 </target>
 <target name="Build" path="[Targets]/[lib] constants" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>constants</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[lib] constants" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/constants.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/constants.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -187,14 +187,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] dataCollector_myController" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>dataCollector_myController</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] dataCollector_myController" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/dataCollector_myController.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/dataCollector_myController.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -215,14 +215,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] dataLog_jaType" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>dataLog_jaType</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] dataLog_jaType" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/dataLog_jaType.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/dataLog_jaType.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -243,14 +243,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] gmm_traj_test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>gmm_traj_test</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] gmm_traj_test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/gmm_traj_test.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/gmm_traj_test.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -271,14 +271,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] hand_test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>hand_test</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] hand_test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/hand_test.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/hand_test.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -299,14 +299,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] playTenisLog" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>playTenisLog</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] playTenisLog" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/playTenisLog.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/playTenisLog.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -327,14 +327,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] playTenisLog_nilu" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>playTenisLog_nilu</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] playTenisLog_nilu" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/playTenisLog_nilu.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/playTenisLog_nilu.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -362,14 +362,14 @@
 </target>
 <target name="Build" path="[Targets]/[lib] samlibs" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>samlibs</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[lib] samlibs" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/samlibs.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/samlibs.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -390,14 +390,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] test_Controller" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>test_Controller</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] test_Controller" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/test_Controller.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/test_Controller.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -418,14 +418,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] test_Controller_compController" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>test_Controller_compController</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] test_Controller_compController" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/test_Controller_compController.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/test_Controller_compController.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -446,14 +446,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] test_dataLog" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>test_dataLog</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] test_dataLog" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/test_dataLog.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/test_dataLog.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -474,14 +474,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] test_gmm" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>test_gmm</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] test_gmm" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/test_gmm.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/test_gmm.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -502,14 +502,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] test_myController" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>test_myController</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] test_myController" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/test_myController.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/test_myController.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -530,14 +530,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] wamMoveNonThread" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/make</buildCommand>
-<buildArguments>-C "/home/prabhupad/Dropbox/writings/Mycodes/build" </buildArguments>
+<buildArguments>-C "/home/niladriisl/eclipse_workspace/gwam-codes/build" </buildArguments>
 <buildTarget>wamMoveNonThread</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] wamMoveNonThread" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/prabhupad/Dropbox/writings/Mycodes/build" "/usr/bin/cmake" -P "CMakeFiles/wamMoveNonThread.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/niladriisl/eclipse_workspace/gwam-codes/build" "/usr/bin/cmake" -P "CMakeFiles/wamMoveNonThread.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>

@@ -47,7 +47,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>/home/prabhupad/Dropbox/writings/Mycodes/build</value>
+					<value>/home/niladriisl/eclipse_workspace/gwam-codes/build</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
@@ -83,7 +83,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.location</key>
-					<value>/home/prabhupad/Dropbox/writings/Mycodes/build</value>
+					<value>/home/niladriisl/eclipse_workspace/gwam-codes/build</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
@@ -136,7 +136,7 @@
 		<link>
 			<name>[Targets]/[exe] collectData/Source Files/collectData.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/collectData.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/collectData.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] collectData/Header Files</name>
@@ -171,7 +171,7 @@
 		<link>
 			<name>[Targets]/[exe] collectData2/Source Files/collectData2.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/collectData2.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/collectData2.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] collectData2/Header Files</name>
@@ -206,7 +206,7 @@
 		<link>
 			<name>[Targets]/[exe] collectData3/Source Files/collectData3.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/collectData3.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/collectData3.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] collectData3/Header Files</name>
@@ -241,7 +241,7 @@
 		<link>
 			<name>[Targets]/[exe] collectData_onlyB/Source Files/collectData_onlyB.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/collectData_onlyB.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/collectData_onlyB.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] collectData_onlyB/Header Files</name>
@@ -276,7 +276,7 @@
 		<link>
 			<name>[Targets]/[lib] constants/Source Files/constants.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/samLibs/constants.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/samLibs/constants.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] constants/Header Files</name>
@@ -311,7 +311,7 @@
 		<link>
 			<name>[Targets]/[exe] dataCollector_myController/Source Files/dataCollector_myController.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/dataCollector_myController.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/dataCollector_myController.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] dataCollector_myController/Header Files</name>
@@ -346,7 +346,7 @@
 		<link>
 			<name>[Targets]/[exe] dataLog_jaType/Source Files/dataLog_jaType.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/dataLog_jaType.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/dataLog_jaType.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] dataLog_jaType/Header Files</name>
@@ -381,7 +381,7 @@
 		<link>
 			<name>[Targets]/[exe] gmm_traj_test/Source Files/gmm_traj_test.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/gmm_traj_test.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/gmm_traj_test.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] gmm_traj_test/Header Files</name>
@@ -416,7 +416,7 @@
 		<link>
 			<name>[Targets]/[exe] hand_test/Source Files/hand_test.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/hand_test.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/hand_test.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] hand_test/Header Files</name>
@@ -451,7 +451,7 @@
 		<link>
 			<name>[Targets]/[exe] playTenisLog/Source Files/playTenisLog.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/playTenisLog.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/playTenisLog.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] playTenisLog/Header Files</name>
@@ -486,7 +486,7 @@
 		<link>
 			<name>[Targets]/[exe] playTenisLog_nilu/Source Files/playTenisLog_nilu.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/playTenisLog_nilu.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/playTenisLog_nilu.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] playTenisLog_nilu/Header Files</name>
@@ -521,7 +521,7 @@
 		<link>
 			<name>[Targets]/[lib] samlibs/Source Files/samlibs.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/samLibs/samlibs.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/samLibs/samlibs.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] samlibs/Header Files</name>
@@ -556,7 +556,7 @@
 		<link>
 			<name>[Targets]/[exe] test_Controller/Source Files/test_Controller.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/test_Controller.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/test_Controller.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] test_Controller/Header Files</name>
@@ -591,7 +591,7 @@
 		<link>
 			<name>[Targets]/[exe] test_Controller_compController/Source Files/test_Controller_compController.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/test_Controller_compController.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/test_Controller_compController.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] test_Controller_compController/Header Files</name>
@@ -626,7 +626,7 @@
 		<link>
 			<name>[Targets]/[exe] test_dataLog/Source Files/test_dataLog.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/test_dataLog.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/test_dataLog.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] test_dataLog/Header Files</name>
@@ -661,7 +661,7 @@
 		<link>
 			<name>[Targets]/[exe] test_gmm/Source Files/test_gmm.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/test_gmm.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/test_gmm.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] test_gmm/Header Files</name>
@@ -696,7 +696,7 @@
 		<link>
 			<name>[Targets]/[exe] test_myController/Source Files/test_myController.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/test_myController.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/test_myController.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] test_myController/Header Files</name>
@@ -731,7 +731,7 @@
 		<link>
 			<name>[Targets]/[exe] wamMoveNonThread/Source Files/wamMoveNonThread.cpp</name>
 			<type>1</type>
-			<location>/home/prabhupad/Dropbox/writings/Mycodes/src/wamMoveNonThread.cpp</location>
+			<location>/home/niladriisl/eclipse_workspace/gwam-codes/src/wamMoveNonThread.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] wamMoveNonThread/Header Files</name>
