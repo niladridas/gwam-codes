@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_gmm.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/test_gmm.dir/flags.make
 
 CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o: CMakeFiles/test_gmm.dir/flags.make
 CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o: ../src/test_gmm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/test_gmm.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o -c /home/robot/Mycodes/src/test_gmm.cpp
 
 CMakeFiles/test_gmm.dir/src/test_gmm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_gmm.dir/src/test_gmm.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/test_gmm.cpp > CMakeFiles/test_gmm.dir/src/test_gmm.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/test_gmm.cpp > CMakeFiles/test_gmm.dir/src/test_gmm.cpp.i
 
 CMakeFiles/test_gmm.dir/src/test_gmm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_gmm.dir/src/test_gmm.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/test_gmm.cpp -o CMakeFiles/test_gmm.dir/src/test_gmm.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/test_gmm.cpp -o CMakeFiles/test_gmm.dir/src/test_gmm.cpp.s
 
 CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o.requires:
 .PHONY : CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o.provides: CMakeFiles/test_gmm.dir/src
 .PHONY : CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o.provides
 
 CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o.provides.build: CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o
+.PHONY : CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o.provides.build
 
 # Object files for target test_gmm
 test_gmm_OBJECTS = \
@@ -77,12 +78,12 @@ test_gmm_OBJECTS = \
 test_gmm_EXTERNAL_OBJECTS =
 
 test_gmm: CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o
-test_gmm: /usr/lib/libboost_thread-mt.so
+test_gmm: /usr/local/lib/libboost_thread.so
 test_gmm: /usr/local/lib/libboost_python.so
-test_gmm: /usr/lib/libnative.so
-test_gmm: /usr/lib/libxenomai.so
-test_gmm: /usr/lib/librtdm.so
-test_gmm: /usr/lib/libpython2.7.so
+test_gmm: /usr/xenomai/lib/libnative.so
+test_gmm: /usr/xenomai/lib/libxenomai.so
+test_gmm: /usr/xenomai/lib/librtdm.so
+test_gmm: /usr/lib/libpython2.6.so
 test_gmm: libconstants.a
 test_gmm: libsamlibs.a
 test_gmm: CMakeFiles/test_gmm.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/test_gmm.dir/clean:
 .PHONY : CMakeFiles/test_gmm.dir/clean
 
 CMakeFiles/test_gmm.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/test_gmm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/test_gmm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_gmm.dir/depend
 

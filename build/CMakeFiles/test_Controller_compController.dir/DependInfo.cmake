@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/niladriisl/eclipse_workspace/gwam-codes/src/test_Controller_compController.cpp" "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/test_Controller_compController.dir/src/test_Controller_compController.cpp.o"
+  "/home/robot/Mycodes/src/test_Controller_compController.cpp" "/home/robot/Mycodes/build/CMakeFiles/test_Controller_compController.dir/src/test_Controller_compController.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,6 +17,6 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/constants.dir/DependInfo.cmake"
-  "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/samlibs.dir/DependInfo.cmake"
+  "/home/robot/Mycodes/build/CMakeFiles/constants.dir/DependInfo.cmake"
+  "/home/robot/Mycodes/build/CMakeFiles/samlibs.dir/DependInfo.cmake"
   )

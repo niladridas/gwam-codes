@@ -34,8 +34,9 @@ namespace isl {
 
   public:
     Eigen::VectorXd output;
-    Eigen::VectorXd foutput;
-    Eigen::VectorXd uoutput;
+#ifdef DEBUG_GMM_
+    Eigen::Matrix<double, 3,1> uOutput, fOutput;
+#endif
   private:
     size_t num_inp, num_op, num_priors, num_lyp_asym_copont;
     double RHO_0, K_;

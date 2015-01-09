@@ -1,3 +1,4 @@
+#define DEBUG_GMM_
 #include <iostream>
 #include <string>
 
@@ -43,8 +44,9 @@ private:
 template<size_t DOF>
 int wam_main(int argc, char** argv, ProductManager& pm, systems::Wam<DOF>& wam) {
 	BARRETT_UNITS_TEMPLATE_TYPEDEFS(DOF);
-	typedef boost::tuple<double, cp_type, cv_type, cp_type, cv_type, double, jp_type> tuple_type;
-	typedef systems::TupleGrouper<double, cp_type, cv_type,cp_type, cv_type, double, jp_type> tg_type;
+	typedef isl::GMMTrajectory::vec3D vec3D;
+	typedef boost::tuple<cp_type, cv_type, cp_type, cv_type, double, jp_type, vec3D, vec3D> tuple_type;
+	typedef systems::TupleGrouper<cp_type, cv_type,cp_type, cv_type, double, jp_type, vec3D, vec3D> tg_type;
 	tg_type tg;
 	char tmpFile[] = "/tmp/btXXXXXX";
 	if (mkstemp(tmpFile) == -1) {
@@ -106,13 +108,15 @@ int wam_main(int argc, char** argv, ProductManager& pm, systems::Wam<DOF>& wam) 
 	gt.setLowpass(omega);
 	CpCircle cpc(wam.getToolPosition(), CP_AMPLITUDE, FREQUENCY);
 	systems::connect(wam.toolPosition.output,gt.cp_input);
-	systems::connect(time.output, tg.template getInput<0>());
-	systems::connect(gt.cp_output, tg.template getInput<1>());
-	systems::connect(gt.cv_output, tg.template getInput<2>());
-	systems::connect(wam.toolPosition.output, tg.template getInput<3>());
-	systems::connect(gt.gmm_out, tg.template getInput<4>());
-	systems::connect(gt.diff_norm_out, tg.template getInput<5>());
-	systems::connect(wam.jpOutput, tg.template getInput<6>());
+//	systems::connect(time.output, tg.template getInput<0>());
+	systems::connect(gt.cp_output, tg.template getInput<0>());
+	systems::connect(gt.cv_output, tg.template getInput<1>());
+	systems::connect(wam.toolPosition.output, tg.template getInput<2>());
+	systems::connect(gt.gmm_out, tg.template getInput<3>());
+	systems::connect(gt.diff_norm_out, tg.template getInput<4>());
+	systems::connect(wam.jpOutput, tg.template getInput<5>());
+	systems::connect(gt.f_out, tg.template getInput<6>());
+	systems::connect(gt.u_out, tg.template getInput<7>());
 
 	wam.moveTo(posZero);
 	wam.moveTo(startPos);

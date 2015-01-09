@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/wamMoveNonThread.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/wamMoveNonThread.dir/flags.make
 
 CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o: CMakeFiles/wamMoveNonThread.dir/flags.make
 CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o: ../src/wamMoveNonThread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/wamMoveNonThread.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o -c /home/robot/Mycodes/src/wamMoveNonThread.cpp
 
 CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/wamMoveNonThread.cpp > CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/wamMoveNonThread.cpp > CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.i
 
 CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/wamMoveNonThread.cpp -o CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/wamMoveNonThread.cpp -o CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.s
 
 CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o.requires:
 .PHONY : CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o.provides: CMakeFiles/
 .PHONY : CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o.provides
 
 CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o.provides.build: CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o
+.PHONY : CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o.provides.build
 
 # Object files for target wamMoveNonThread
 wamMoveNonThread_OBJECTS = \
@@ -77,12 +78,12 @@ wamMoveNonThread_OBJECTS = \
 wamMoveNonThread_EXTERNAL_OBJECTS =
 
 wamMoveNonThread: CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o
-wamMoveNonThread: /usr/lib/libboost_thread-mt.so
+wamMoveNonThread: /usr/local/lib/libboost_thread.so
 wamMoveNonThread: /usr/local/lib/libboost_python.so
-wamMoveNonThread: /usr/lib/libnative.so
-wamMoveNonThread: /usr/lib/libxenomai.so
-wamMoveNonThread: /usr/lib/librtdm.so
-wamMoveNonThread: /usr/lib/libpython2.7.so
+wamMoveNonThread: /usr/xenomai/lib/libnative.so
+wamMoveNonThread: /usr/xenomai/lib/libxenomai.so
+wamMoveNonThread: /usr/xenomai/lib/librtdm.so
+wamMoveNonThread: /usr/lib/libpython2.6.so
 wamMoveNonThread: libconstants.a
 wamMoveNonThread: libsamlibs.a
 wamMoveNonThread: CMakeFiles/wamMoveNonThread.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/wamMoveNonThread.dir/clean:
 .PHONY : CMakeFiles/wamMoveNonThread.dir/clean
 
 CMakeFiles/wamMoveNonThread.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/wamMoveNonThread.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/wamMoveNonThread.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/wamMoveNonThread.dir/depend
 

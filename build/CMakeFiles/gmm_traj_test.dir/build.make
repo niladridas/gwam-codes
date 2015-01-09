@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gmm_traj_test.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/gmm_traj_test.dir/flags.make
 
 CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o: CMakeFiles/gmm_traj_test.dir/flags.make
 CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o: ../src/gmm_traj_test.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/gmm_traj_test.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o -c /home/robot/Mycodes/src/gmm_traj_test.cpp
 
 CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/gmm_traj_test.cpp > CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/gmm_traj_test.cpp > CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.i
 
 CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/gmm_traj_test.cpp -o CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/gmm_traj_test.cpp -o CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.s
 
 CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o.requires:
 .PHONY : CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o.provides: CMakeFiles/gmm_tr
 .PHONY : CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o.provides
 
 CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o.provides.build: CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o
+.PHONY : CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o.provides.build
 
 # Object files for target gmm_traj_test
 gmm_traj_test_OBJECTS = \
@@ -77,12 +78,12 @@ gmm_traj_test_OBJECTS = \
 gmm_traj_test_EXTERNAL_OBJECTS =
 
 gmm_traj_test: CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o
-gmm_traj_test: /usr/lib/libboost_thread-mt.so
+gmm_traj_test: /usr/local/lib/libboost_thread.so
 gmm_traj_test: /usr/local/lib/libboost_python.so
-gmm_traj_test: /usr/lib/libnative.so
-gmm_traj_test: /usr/lib/libxenomai.so
-gmm_traj_test: /usr/lib/librtdm.so
-gmm_traj_test: /usr/lib/libpython2.7.so
+gmm_traj_test: /usr/xenomai/lib/libnative.so
+gmm_traj_test: /usr/xenomai/lib/libxenomai.so
+gmm_traj_test: /usr/xenomai/lib/librtdm.so
+gmm_traj_test: /usr/lib/libpython2.6.so
 gmm_traj_test: libconstants.a
 gmm_traj_test: libsamlibs.a
 gmm_traj_test: CMakeFiles/gmm_traj_test.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/gmm_traj_test.dir/clean:
 .PHONY : CMakeFiles/gmm_traj_test.dir/clean
 
 CMakeFiles/gmm_traj_test.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/gmm_traj_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/gmm_traj_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gmm_traj_test.dir/depend
 

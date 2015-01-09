@@ -6,7 +6,7 @@ CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o
  ../include/Detail/samlibs-inl.h
  ../include/GMM.h
  ../include/samlibs.h
- /home/niladriisl/eclipse_workspace/gwam-codes/src/test_gmm.cpp
+ /home/robot/Mycodes/src/test_gmm.cpp
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/LU

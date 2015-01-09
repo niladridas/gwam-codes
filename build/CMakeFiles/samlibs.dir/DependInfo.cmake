@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/niladriisl/eclipse_workspace/gwam-codes/samLibs/samlibs.cpp" "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o"
+  "/home/robot/Mycodes/samLibs/samlibs.cpp" "/home/robot/Mycodes/build/CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

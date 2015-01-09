@@ -32,7 +32,7 @@ using systems::reconnect;
 
 bool validate_args(int argc,char** argv) {
   if (argc < 2) {
-    std::cout << "Usage: " << argv[0] << " <File Write>" << " <No. of loops u want to run>" << std::endl;
+    std::cout << "Usage: " << argv[0] << " <File Write>" << " <No. of loops u want to run>"<< " <cv_filter LP freq.>" << std::endl;
     return false;
   }
   return true;
@@ -53,10 +53,18 @@ int wam_main(int argc, char** argv, ProductManager& pm, systems::Wam<DOF>& wam) 
 	  loop = boost::lexical_cast<size_t>(argv[2]);
 	}
 
+	double omega_cv=100;
+	if (argc >3) {
+	  omega_cv = boost::lexical_cast<double>(argv[3]);
+	}
 
+	std::cout<<"\n###############################\nNum. Loops: "<<loop<<"\n cv_filter LP freq: "<<omega_cv<<"\n ####################################################\n";
 	const double T_s = pm.getExecutionManager()->getPeriod();
 
 	Sam::CvelGenerator<DOF> CV(&wam);
+	systems::FirstOrderFilter<cv_type> cv_filter;
+	cv_filter.setLowPass(cv_type(omega_cv));
+	systems::connect(CV.output, cv_filter.input);
 
 	wam.gravityCompensate();
 
@@ -72,7 +80,8 @@ int wam_main(int argc, char** argv, ProductManager& pm, systems::Wam<DOF>& wam) 
 //			connect(wam.jvOutput, jpLogTg.template getInput<2>());
 			time.setOutput(0.0);
 for(size_t i=0; i<loop; i++){
-	printf("Press [Enter] to start teaching.\n");
+	printf("Press [Enter] to start teaching. \nLoop ");
+	std::cout<<i<<"\n";
 	Sam::waitForEnter();
 	{
 		// Make sure the Systems are connected on the same execution cycle
@@ -83,7 +92,7 @@ for(size_t i=0; i<loop; i++){
 
 		systems::connect(time.output, jpLogTg.template getInput<0>());
 		systems::connect(wam.toolPosition.output, jpLogTg.template getInput<1>());
-		connect(CV.output, jpLogTg.template getInput<2>());
+		connect(cv_filter.output, jpLogTg.template getInput<2>());
 		connect(wam.jpOutput, jpLogTg.template getInput<3>());
 		connect(wam.jvOutput, jpLogTg.template getInput<4>());
 		time.start();

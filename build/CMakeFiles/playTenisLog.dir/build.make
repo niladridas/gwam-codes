@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/playTenisLog.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/playTenisLog.dir/flags.make
 
 CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o: CMakeFiles/playTenisLog.dir/flags.make
 CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o: ../src/playTenisLog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/playTenisLog.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o -c /home/robot/Mycodes/src/playTenisLog.cpp
 
 CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/playTenisLog.cpp > CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/playTenisLog.cpp > CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.i
 
 CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/playTenisLog.cpp -o CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/playTenisLog.cpp -o CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.s
 
 CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o.requires:
 .PHONY : CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o.provides: CMakeFiles/playTeni
 .PHONY : CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o.provides
 
 CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o.provides.build: CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o
+.PHONY : CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o.provides.build
 
 # Object files for target playTenisLog
 playTenisLog_OBJECTS = \
@@ -77,12 +78,12 @@ playTenisLog_OBJECTS = \
 playTenisLog_EXTERNAL_OBJECTS =
 
 playTenisLog: CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o
-playTenisLog: /usr/lib/libboost_thread-mt.so
+playTenisLog: /usr/local/lib/libboost_thread.so
 playTenisLog: /usr/local/lib/libboost_python.so
-playTenisLog: /usr/lib/libnative.so
-playTenisLog: /usr/lib/libxenomai.so
-playTenisLog: /usr/lib/librtdm.so
-playTenisLog: /usr/lib/libpython2.7.so
+playTenisLog: /usr/xenomai/lib/libnative.so
+playTenisLog: /usr/xenomai/lib/libxenomai.so
+playTenisLog: /usr/xenomai/lib/librtdm.so
+playTenisLog: /usr/lib/libpython2.6.so
 playTenisLog: libconstants.a
 playTenisLog: libsamlibs.a
 playTenisLog: CMakeFiles/playTenisLog.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/playTenisLog.dir/clean:
 .PHONY : CMakeFiles/playTenisLog.dir/clean
 
 CMakeFiles/playTenisLog.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/playTenisLog.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/playTenisLog.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/playTenisLog.dir/depend
 

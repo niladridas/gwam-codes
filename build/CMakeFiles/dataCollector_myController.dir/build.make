@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dataCollector_myController.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/dataCollector_myController.dir/flags.make
 
 CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o: CMakeFiles/dataCollector_myController.dir/flags.make
 CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o: ../src/dataCollector_myController.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/dataCollector_myController.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o -c /home/robot/Mycodes/src/dataCollector_myController.cpp
 
 CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/dataCollector_myController.cpp > CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/dataCollector_myController.cpp > CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.i
 
 CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/dataCollector_myController.cpp -o CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/dataCollector_myController.cpp -o CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.s
 
 CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o.requires:
 .PHONY : CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o.p
 .PHONY : CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o.provides
 
 CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o.provides.build: CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o
+.PHONY : CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o.provides.build
 
 # Object files for target dataCollector_myController
 dataCollector_myController_OBJECTS = \
@@ -77,12 +78,12 @@ dataCollector_myController_OBJECTS = \
 dataCollector_myController_EXTERNAL_OBJECTS =
 
 dataCollector_myController: CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o
-dataCollector_myController: /usr/lib/libboost_thread-mt.so
+dataCollector_myController: /usr/local/lib/libboost_thread.so
 dataCollector_myController: /usr/local/lib/libboost_python.so
-dataCollector_myController: /usr/lib/libnative.so
-dataCollector_myController: /usr/lib/libxenomai.so
-dataCollector_myController: /usr/lib/librtdm.so
-dataCollector_myController: /usr/lib/libpython2.7.so
+dataCollector_myController: /usr/xenomai/lib/libnative.so
+dataCollector_myController: /usr/xenomai/lib/libxenomai.so
+dataCollector_myController: /usr/xenomai/lib/librtdm.so
+dataCollector_myController: /usr/lib/libpython2.6.so
 dataCollector_myController: libconstants.a
 dataCollector_myController: libsamlibs.a
 dataCollector_myController: CMakeFiles/dataCollector_myController.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/dataCollector_myController.dir/clean:
 .PHONY : CMakeFiles/dataCollector_myController.dir/clean
 
 CMakeFiles/dataCollector_myController.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/dataCollector_myController.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/dataCollector_myController.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dataCollector_myController.dir/depend
 

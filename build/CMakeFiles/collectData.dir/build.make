@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/collectData.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/collectData.dir/flags.make
 
 CMakeFiles/collectData.dir/src/collectData.cpp.o: CMakeFiles/collectData.dir/flags.make
 CMakeFiles/collectData.dir/src/collectData.cpp.o: ../src/collectData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/collectData.dir/src/collectData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/collectData.dir/src/collectData.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/collectData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/collectData.dir/src/collectData.cpp.o -c /home/robot/Mycodes/src/collectData.cpp
 
 CMakeFiles/collectData.dir/src/collectData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collectData.dir/src/collectData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/collectData.cpp > CMakeFiles/collectData.dir/src/collectData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/collectData.cpp > CMakeFiles/collectData.dir/src/collectData.cpp.i
 
 CMakeFiles/collectData.dir/src/collectData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collectData.dir/src/collectData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/collectData.cpp -o CMakeFiles/collectData.dir/src/collectData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/collectData.cpp -o CMakeFiles/collectData.dir/src/collectData.cpp.s
 
 CMakeFiles/collectData.dir/src/collectData.cpp.o.requires:
 .PHONY : CMakeFiles/collectData.dir/src/collectData.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/collectData.dir/src/collectData.cpp.o.provides: CMakeFiles/collectDat
 .PHONY : CMakeFiles/collectData.dir/src/collectData.cpp.o.provides
 
 CMakeFiles/collectData.dir/src/collectData.cpp.o.provides.build: CMakeFiles/collectData.dir/src/collectData.cpp.o
+.PHONY : CMakeFiles/collectData.dir/src/collectData.cpp.o.provides.build
 
 # Object files for target collectData
 collectData_OBJECTS = \
@@ -77,12 +78,12 @@ collectData_OBJECTS = \
 collectData_EXTERNAL_OBJECTS =
 
 collectData: CMakeFiles/collectData.dir/src/collectData.cpp.o
-collectData: /usr/lib/libboost_thread-mt.so
+collectData: /usr/local/lib/libboost_thread.so
 collectData: /usr/local/lib/libboost_python.so
-collectData: /usr/lib/libnative.so
-collectData: /usr/lib/libxenomai.so
-collectData: /usr/lib/librtdm.so
-collectData: /usr/lib/libpython2.7.so
+collectData: /usr/xenomai/lib/libnative.so
+collectData: /usr/xenomai/lib/libxenomai.so
+collectData: /usr/xenomai/lib/librtdm.so
+collectData: /usr/lib/libpython2.6.so
 collectData: libconstants.a
 collectData: libsamlibs.a
 collectData: CMakeFiles/collectData.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/collectData.dir/clean:
 .PHONY : CMakeFiles/collectData.dir/clean
 
 CMakeFiles/collectData.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/collectData.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/collectData.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/collectData.dir/depend
 

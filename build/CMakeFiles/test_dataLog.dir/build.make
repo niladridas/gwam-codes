@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canonical targets will work.
+# Disable implicit rules so canoncical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/robot/Mycodes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/robot/Mycodes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_dataLog.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/test_dataLog.dir/flags.make
 
 CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o: CMakeFiles/test_dataLog.dir/flags.make
 CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o: ../src/test_dataLog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robot/Mycodes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/test_dataLog.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o -c /home/robot/Mycodes/src/test_dataLog.cpp
 
 CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/test_dataLog.cpp > CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robot/Mycodes/src/test_dataLog.cpp > CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.i
 
 CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/test_dataLog.cpp -o CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robot/Mycodes/src/test_dataLog.cpp -o CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.s
 
 CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o.requires:
 .PHONY : CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o.requires
@@ -68,6 +68,7 @@ CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o.provides: CMakeFiles/test_dat
 .PHONY : CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o.provides
 
 CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o.provides.build: CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o
+.PHONY : CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o.provides.build
 
 # Object files for target test_dataLog
 test_dataLog_OBJECTS = \
@@ -77,12 +78,12 @@ test_dataLog_OBJECTS = \
 test_dataLog_EXTERNAL_OBJECTS =
 
 test_dataLog: CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o
-test_dataLog: /usr/lib/libboost_thread-mt.so
+test_dataLog: /usr/local/lib/libboost_thread.so
 test_dataLog: /usr/local/lib/libboost_python.so
-test_dataLog: /usr/lib/libnative.so
-test_dataLog: /usr/lib/libxenomai.so
-test_dataLog: /usr/lib/librtdm.so
-test_dataLog: /usr/lib/libpython2.7.so
+test_dataLog: /usr/xenomai/lib/libnative.so
+test_dataLog: /usr/xenomai/lib/libxenomai.so
+test_dataLog: /usr/xenomai/lib/librtdm.so
+test_dataLog: /usr/lib/libpython2.6.so
 test_dataLog: libconstants.a
 test_dataLog: libsamlibs.a
 test_dataLog: CMakeFiles/test_dataLog.dir/build.make
@@ -102,6 +103,6 @@ CMakeFiles/test_dataLog.dir/clean:
 .PHONY : CMakeFiles/test_dataLog.dir/clean
 
 CMakeFiles/test_dataLog.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/test_dataLog.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robot/Mycodes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robot/Mycodes /home/robot/Mycodes /home/robot/Mycodes/build /home/robot/Mycodes/build /home/robot/Mycodes/build/CMakeFiles/test_dataLog.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_dataLog.dir/depend
 
