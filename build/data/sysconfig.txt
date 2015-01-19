@@ -1,4 +1,4 @@
-num_input=3
+num_input=5
 num_output=3
 num_lyp_asym_copont=0
-xi_star_training=[0.590402;-0.002491;-0.266466]
+xi_star_training=[0.579910;0.000297;-0.270034]
