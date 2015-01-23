@@ -1,4 +1,4 @@
-# Install script for directory: /home/robot/Mycodes
+# Install script for directory: /home/niladriisl/eclipse_workspace/gwam-codes
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/robot/Mycodes/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/niladriisl/eclipse_workspace/gwam-codes/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/robot/Mycodes/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/niladriisl/eclipse_workspace/gwam-codes/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

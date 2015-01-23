@@ -8,7 +8,7 @@ default_target: all
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/Mycodes
+CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/Mycodes/build
+CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles /home/robot/Mycodes/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/Mycodes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -96,58 +96,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named collectData
-
-# Build rule for target.
-collectData: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collectData
-.PHONY : collectData
-
-# fast build rule for target.
-collectData/fast:
-	$(MAKE) -f CMakeFiles/collectData.dir/build.make CMakeFiles/collectData.dir/build
-.PHONY : collectData/fast
-
-#=============================================================================
-# Target rules for targets named collectData2
-
-# Build rule for target.
-collectData2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collectData2
-.PHONY : collectData2
-
-# fast build rule for target.
-collectData2/fast:
-	$(MAKE) -f CMakeFiles/collectData2.dir/build.make CMakeFiles/collectData2.dir/build
-.PHONY : collectData2/fast
-
-#=============================================================================
-# Target rules for targets named collectData3
-
-# Build rule for target.
-collectData3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collectData3
-.PHONY : collectData3
-
-# fast build rule for target.
-collectData3/fast:
-	$(MAKE) -f CMakeFiles/collectData3.dir/build.make CMakeFiles/collectData3.dir/build
-.PHONY : collectData3/fast
-
-#=============================================================================
-# Target rules for targets named collectData_onlyB
-
-# Build rule for target.
-collectData_onlyB: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collectData_onlyB
-.PHONY : collectData_onlyB
-
-# fast build rule for target.
-collectData_onlyB/fast:
-	$(MAKE) -f CMakeFiles/collectData_onlyB.dir/build.make CMakeFiles/collectData_onlyB.dir/build
-.PHONY : collectData_onlyB/fast
-
-#=============================================================================
 # Target rules for targets named constants
 
 # Build rule for target.
@@ -159,84 +107,6 @@ constants: cmake_check_build_system
 constants/fast:
 	$(MAKE) -f CMakeFiles/constants.dir/build.make CMakeFiles/constants.dir/build
 .PHONY : constants/fast
-
-#=============================================================================
-# Target rules for targets named dataCollector_myController
-
-# Build rule for target.
-dataCollector_myController: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dataCollector_myController
-.PHONY : dataCollector_myController
-
-# fast build rule for target.
-dataCollector_myController/fast:
-	$(MAKE) -f CMakeFiles/dataCollector_myController.dir/build.make CMakeFiles/dataCollector_myController.dir/build
-.PHONY : dataCollector_myController/fast
-
-#=============================================================================
-# Target rules for targets named dataLog_jaType
-
-# Build rule for target.
-dataLog_jaType: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dataLog_jaType
-.PHONY : dataLog_jaType
-
-# fast build rule for target.
-dataLog_jaType/fast:
-	$(MAKE) -f CMakeFiles/dataLog_jaType.dir/build.make CMakeFiles/dataLog_jaType.dir/build
-.PHONY : dataLog_jaType/fast
-
-#=============================================================================
-# Target rules for targets named gmm_traj_test
-
-# Build rule for target.
-gmm_traj_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmm_traj_test
-.PHONY : gmm_traj_test
-
-# fast build rule for target.
-gmm_traj_test/fast:
-	$(MAKE) -f CMakeFiles/gmm_traj_test.dir/build.make CMakeFiles/gmm_traj_test.dir/build
-.PHONY : gmm_traj_test/fast
-
-#=============================================================================
-# Target rules for targets named hand_test
-
-# Build rule for target.
-hand_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hand_test
-.PHONY : hand_test
-
-# fast build rule for target.
-hand_test/fast:
-	$(MAKE) -f CMakeFiles/hand_test.dir/build.make CMakeFiles/hand_test.dir/build
-.PHONY : hand_test/fast
-
-#=============================================================================
-# Target rules for targets named playTenisLog
-
-# Build rule for target.
-playTenisLog: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 playTenisLog
-.PHONY : playTenisLog
-
-# fast build rule for target.
-playTenisLog/fast:
-	$(MAKE) -f CMakeFiles/playTenisLog.dir/build.make CMakeFiles/playTenisLog.dir/build
-.PHONY : playTenisLog/fast
-
-#=============================================================================
-# Target rules for targets named playTenisLog_nilu
-
-# Build rule for target.
-playTenisLog_nilu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 playTenisLog_nilu
-.PHONY : playTenisLog_nilu
-
-# fast build rule for target.
-playTenisLog_nilu/fast:
-	$(MAKE) -f CMakeFiles/playTenisLog_nilu.dir/build.make CMakeFiles/playTenisLog_nilu.dir/build
-.PHONY : playTenisLog_nilu/fast
 
 #=============================================================================
 # Target rules for targets named samlibs
@@ -252,82 +122,17 @@ samlibs/fast:
 .PHONY : samlibs/fast
 
 #=============================================================================
-# Target rules for targets named test_Controller
+# Target rules for targets named torque_aritra_nilu
 
 # Build rule for target.
-test_Controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_Controller
-.PHONY : test_Controller
+torque_aritra_nilu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 torque_aritra_nilu
+.PHONY : torque_aritra_nilu
 
 # fast build rule for target.
-test_Controller/fast:
-	$(MAKE) -f CMakeFiles/test_Controller.dir/build.make CMakeFiles/test_Controller.dir/build
-.PHONY : test_Controller/fast
-
-#=============================================================================
-# Target rules for targets named test_Controller_compController
-
-# Build rule for target.
-test_Controller_compController: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_Controller_compController
-.PHONY : test_Controller_compController
-
-# fast build rule for target.
-test_Controller_compController/fast:
-	$(MAKE) -f CMakeFiles/test_Controller_compController.dir/build.make CMakeFiles/test_Controller_compController.dir/build
-.PHONY : test_Controller_compController/fast
-
-#=============================================================================
-# Target rules for targets named test_dataLog
-
-# Build rule for target.
-test_dataLog: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_dataLog
-.PHONY : test_dataLog
-
-# fast build rule for target.
-test_dataLog/fast:
-	$(MAKE) -f CMakeFiles/test_dataLog.dir/build.make CMakeFiles/test_dataLog.dir/build
-.PHONY : test_dataLog/fast
-
-#=============================================================================
-# Target rules for targets named test_gmm
-
-# Build rule for target.
-test_gmm: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_gmm
-.PHONY : test_gmm
-
-# fast build rule for target.
-test_gmm/fast:
-	$(MAKE) -f CMakeFiles/test_gmm.dir/build.make CMakeFiles/test_gmm.dir/build
-.PHONY : test_gmm/fast
-
-#=============================================================================
-# Target rules for targets named test_myController
-
-# Build rule for target.
-test_myController: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_myController
-.PHONY : test_myController
-
-# fast build rule for target.
-test_myController/fast:
-	$(MAKE) -f CMakeFiles/test_myController.dir/build.make CMakeFiles/test_myController.dir/build
-.PHONY : test_myController/fast
-
-#=============================================================================
-# Target rules for targets named wamMoveNonThread
-
-# Build rule for target.
-wamMoveNonThread: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 wamMoveNonThread
-.PHONY : wamMoveNonThread
-
-# fast build rule for target.
-wamMoveNonThread/fast:
-	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/build
-.PHONY : wamMoveNonThread/fast
+torque_aritra_nilu/fast:
+	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/build
+.PHONY : torque_aritra_nilu/fast
 
 samLibs/constants.o: samLibs/constants.cpp.o
 .PHONY : samLibs/constants.o
@@ -377,389 +182,29 @@ samLibs/samlibs.cpp.s:
 	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s
 .PHONY : samLibs/samlibs.cpp.s
 
-src/collectData.o: src/collectData.cpp.o
-.PHONY : src/collectData.o
+src/torque_aritra_nilu.o: src/torque_aritra_nilu.cpp.o
+.PHONY : src/torque_aritra_nilu.o
 
 # target to build an object file
-src/collectData.cpp.o:
-	$(MAKE) -f CMakeFiles/collectData.dir/build.make CMakeFiles/collectData.dir/src/collectData.cpp.o
-.PHONY : src/collectData.cpp.o
+src/torque_aritra_nilu.cpp.o:
+	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o
+.PHONY : src/torque_aritra_nilu.cpp.o
 
-src/collectData.i: src/collectData.cpp.i
-.PHONY : src/collectData.i
-
-# target to preprocess a source file
-src/collectData.cpp.i:
-	$(MAKE) -f CMakeFiles/collectData.dir/build.make CMakeFiles/collectData.dir/src/collectData.cpp.i
-.PHONY : src/collectData.cpp.i
-
-src/collectData.s: src/collectData.cpp.s
-.PHONY : src/collectData.s
-
-# target to generate assembly for a file
-src/collectData.cpp.s:
-	$(MAKE) -f CMakeFiles/collectData.dir/build.make CMakeFiles/collectData.dir/src/collectData.cpp.s
-.PHONY : src/collectData.cpp.s
-
-src/collectData2.o: src/collectData2.cpp.o
-.PHONY : src/collectData2.o
-
-# target to build an object file
-src/collectData2.cpp.o:
-	$(MAKE) -f CMakeFiles/collectData2.dir/build.make CMakeFiles/collectData2.dir/src/collectData2.cpp.o
-.PHONY : src/collectData2.cpp.o
-
-src/collectData2.i: src/collectData2.cpp.i
-.PHONY : src/collectData2.i
+src/torque_aritra_nilu.i: src/torque_aritra_nilu.cpp.i
+.PHONY : src/torque_aritra_nilu.i
 
 # target to preprocess a source file
-src/collectData2.cpp.i:
-	$(MAKE) -f CMakeFiles/collectData2.dir/build.make CMakeFiles/collectData2.dir/src/collectData2.cpp.i
-.PHONY : src/collectData2.cpp.i
+src/torque_aritra_nilu.cpp.i:
+	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.i
+.PHONY : src/torque_aritra_nilu.cpp.i
 
-src/collectData2.s: src/collectData2.cpp.s
-.PHONY : src/collectData2.s
-
-# target to generate assembly for a file
-src/collectData2.cpp.s:
-	$(MAKE) -f CMakeFiles/collectData2.dir/build.make CMakeFiles/collectData2.dir/src/collectData2.cpp.s
-.PHONY : src/collectData2.cpp.s
-
-src/collectData3.o: src/collectData3.cpp.o
-.PHONY : src/collectData3.o
-
-# target to build an object file
-src/collectData3.cpp.o:
-	$(MAKE) -f CMakeFiles/collectData3.dir/build.make CMakeFiles/collectData3.dir/src/collectData3.cpp.o
-.PHONY : src/collectData3.cpp.o
-
-src/collectData3.i: src/collectData3.cpp.i
-.PHONY : src/collectData3.i
-
-# target to preprocess a source file
-src/collectData3.cpp.i:
-	$(MAKE) -f CMakeFiles/collectData3.dir/build.make CMakeFiles/collectData3.dir/src/collectData3.cpp.i
-.PHONY : src/collectData3.cpp.i
-
-src/collectData3.s: src/collectData3.cpp.s
-.PHONY : src/collectData3.s
+src/torque_aritra_nilu.s: src/torque_aritra_nilu.cpp.s
+.PHONY : src/torque_aritra_nilu.s
 
 # target to generate assembly for a file
-src/collectData3.cpp.s:
-	$(MAKE) -f CMakeFiles/collectData3.dir/build.make CMakeFiles/collectData3.dir/src/collectData3.cpp.s
-.PHONY : src/collectData3.cpp.s
-
-src/collectData_onlyB.o: src/collectData_onlyB.cpp.o
-.PHONY : src/collectData_onlyB.o
-
-# target to build an object file
-src/collectData_onlyB.cpp.o:
-	$(MAKE) -f CMakeFiles/collectData_onlyB.dir/build.make CMakeFiles/collectData_onlyB.dir/src/collectData_onlyB.cpp.o
-.PHONY : src/collectData_onlyB.cpp.o
-
-src/collectData_onlyB.i: src/collectData_onlyB.cpp.i
-.PHONY : src/collectData_onlyB.i
-
-# target to preprocess a source file
-src/collectData_onlyB.cpp.i:
-	$(MAKE) -f CMakeFiles/collectData_onlyB.dir/build.make CMakeFiles/collectData_onlyB.dir/src/collectData_onlyB.cpp.i
-.PHONY : src/collectData_onlyB.cpp.i
-
-src/collectData_onlyB.s: src/collectData_onlyB.cpp.s
-.PHONY : src/collectData_onlyB.s
-
-# target to generate assembly for a file
-src/collectData_onlyB.cpp.s:
-	$(MAKE) -f CMakeFiles/collectData_onlyB.dir/build.make CMakeFiles/collectData_onlyB.dir/src/collectData_onlyB.cpp.s
-.PHONY : src/collectData_onlyB.cpp.s
-
-src/dataCollector_myController.o: src/dataCollector_myController.cpp.o
-.PHONY : src/dataCollector_myController.o
-
-# target to build an object file
-src/dataCollector_myController.cpp.o:
-	$(MAKE) -f CMakeFiles/dataCollector_myController.dir/build.make CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.o
-.PHONY : src/dataCollector_myController.cpp.o
-
-src/dataCollector_myController.i: src/dataCollector_myController.cpp.i
-.PHONY : src/dataCollector_myController.i
-
-# target to preprocess a source file
-src/dataCollector_myController.cpp.i:
-	$(MAKE) -f CMakeFiles/dataCollector_myController.dir/build.make CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.i
-.PHONY : src/dataCollector_myController.cpp.i
-
-src/dataCollector_myController.s: src/dataCollector_myController.cpp.s
-.PHONY : src/dataCollector_myController.s
-
-# target to generate assembly for a file
-src/dataCollector_myController.cpp.s:
-	$(MAKE) -f CMakeFiles/dataCollector_myController.dir/build.make CMakeFiles/dataCollector_myController.dir/src/dataCollector_myController.cpp.s
-.PHONY : src/dataCollector_myController.cpp.s
-
-src/dataLog_jaType.o: src/dataLog_jaType.cpp.o
-.PHONY : src/dataLog_jaType.o
-
-# target to build an object file
-src/dataLog_jaType.cpp.o:
-	$(MAKE) -f CMakeFiles/dataLog_jaType.dir/build.make CMakeFiles/dataLog_jaType.dir/src/dataLog_jaType.cpp.o
-.PHONY : src/dataLog_jaType.cpp.o
-
-src/dataLog_jaType.i: src/dataLog_jaType.cpp.i
-.PHONY : src/dataLog_jaType.i
-
-# target to preprocess a source file
-src/dataLog_jaType.cpp.i:
-	$(MAKE) -f CMakeFiles/dataLog_jaType.dir/build.make CMakeFiles/dataLog_jaType.dir/src/dataLog_jaType.cpp.i
-.PHONY : src/dataLog_jaType.cpp.i
-
-src/dataLog_jaType.s: src/dataLog_jaType.cpp.s
-.PHONY : src/dataLog_jaType.s
-
-# target to generate assembly for a file
-src/dataLog_jaType.cpp.s:
-	$(MAKE) -f CMakeFiles/dataLog_jaType.dir/build.make CMakeFiles/dataLog_jaType.dir/src/dataLog_jaType.cpp.s
-.PHONY : src/dataLog_jaType.cpp.s
-
-src/gmm_traj_test.o: src/gmm_traj_test.cpp.o
-.PHONY : src/gmm_traj_test.o
-
-# target to build an object file
-src/gmm_traj_test.cpp.o:
-	$(MAKE) -f CMakeFiles/gmm_traj_test.dir/build.make CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.o
-.PHONY : src/gmm_traj_test.cpp.o
-
-src/gmm_traj_test.i: src/gmm_traj_test.cpp.i
-.PHONY : src/gmm_traj_test.i
-
-# target to preprocess a source file
-src/gmm_traj_test.cpp.i:
-	$(MAKE) -f CMakeFiles/gmm_traj_test.dir/build.make CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.i
-.PHONY : src/gmm_traj_test.cpp.i
-
-src/gmm_traj_test.s: src/gmm_traj_test.cpp.s
-.PHONY : src/gmm_traj_test.s
-
-# target to generate assembly for a file
-src/gmm_traj_test.cpp.s:
-	$(MAKE) -f CMakeFiles/gmm_traj_test.dir/build.make CMakeFiles/gmm_traj_test.dir/src/gmm_traj_test.cpp.s
-.PHONY : src/gmm_traj_test.cpp.s
-
-src/hand_test.o: src/hand_test.cpp.o
-.PHONY : src/hand_test.o
-
-# target to build an object file
-src/hand_test.cpp.o:
-	$(MAKE) -f CMakeFiles/hand_test.dir/build.make CMakeFiles/hand_test.dir/src/hand_test.cpp.o
-.PHONY : src/hand_test.cpp.o
-
-src/hand_test.i: src/hand_test.cpp.i
-.PHONY : src/hand_test.i
-
-# target to preprocess a source file
-src/hand_test.cpp.i:
-	$(MAKE) -f CMakeFiles/hand_test.dir/build.make CMakeFiles/hand_test.dir/src/hand_test.cpp.i
-.PHONY : src/hand_test.cpp.i
-
-src/hand_test.s: src/hand_test.cpp.s
-.PHONY : src/hand_test.s
-
-# target to generate assembly for a file
-src/hand_test.cpp.s:
-	$(MAKE) -f CMakeFiles/hand_test.dir/build.make CMakeFiles/hand_test.dir/src/hand_test.cpp.s
-.PHONY : src/hand_test.cpp.s
-
-src/playTenisLog.o: src/playTenisLog.cpp.o
-.PHONY : src/playTenisLog.o
-
-# target to build an object file
-src/playTenisLog.cpp.o:
-	$(MAKE) -f CMakeFiles/playTenisLog.dir/build.make CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.o
-.PHONY : src/playTenisLog.cpp.o
-
-src/playTenisLog.i: src/playTenisLog.cpp.i
-.PHONY : src/playTenisLog.i
-
-# target to preprocess a source file
-src/playTenisLog.cpp.i:
-	$(MAKE) -f CMakeFiles/playTenisLog.dir/build.make CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.i
-.PHONY : src/playTenisLog.cpp.i
-
-src/playTenisLog.s: src/playTenisLog.cpp.s
-.PHONY : src/playTenisLog.s
-
-# target to generate assembly for a file
-src/playTenisLog.cpp.s:
-	$(MAKE) -f CMakeFiles/playTenisLog.dir/build.make CMakeFiles/playTenisLog.dir/src/playTenisLog.cpp.s
-.PHONY : src/playTenisLog.cpp.s
-
-src/playTenisLog_nilu.o: src/playTenisLog_nilu.cpp.o
-.PHONY : src/playTenisLog_nilu.o
-
-# target to build an object file
-src/playTenisLog_nilu.cpp.o:
-	$(MAKE) -f CMakeFiles/playTenisLog_nilu.dir/build.make CMakeFiles/playTenisLog_nilu.dir/src/playTenisLog_nilu.cpp.o
-.PHONY : src/playTenisLog_nilu.cpp.o
-
-src/playTenisLog_nilu.i: src/playTenisLog_nilu.cpp.i
-.PHONY : src/playTenisLog_nilu.i
-
-# target to preprocess a source file
-src/playTenisLog_nilu.cpp.i:
-	$(MAKE) -f CMakeFiles/playTenisLog_nilu.dir/build.make CMakeFiles/playTenisLog_nilu.dir/src/playTenisLog_nilu.cpp.i
-.PHONY : src/playTenisLog_nilu.cpp.i
-
-src/playTenisLog_nilu.s: src/playTenisLog_nilu.cpp.s
-.PHONY : src/playTenisLog_nilu.s
-
-# target to generate assembly for a file
-src/playTenisLog_nilu.cpp.s:
-	$(MAKE) -f CMakeFiles/playTenisLog_nilu.dir/build.make CMakeFiles/playTenisLog_nilu.dir/src/playTenisLog_nilu.cpp.s
-.PHONY : src/playTenisLog_nilu.cpp.s
-
-src/test_Controller.o: src/test_Controller.cpp.o
-.PHONY : src/test_Controller.o
-
-# target to build an object file
-src/test_Controller.cpp.o:
-	$(MAKE) -f CMakeFiles/test_Controller.dir/build.make CMakeFiles/test_Controller.dir/src/test_Controller.cpp.o
-.PHONY : src/test_Controller.cpp.o
-
-src/test_Controller.i: src/test_Controller.cpp.i
-.PHONY : src/test_Controller.i
-
-# target to preprocess a source file
-src/test_Controller.cpp.i:
-	$(MAKE) -f CMakeFiles/test_Controller.dir/build.make CMakeFiles/test_Controller.dir/src/test_Controller.cpp.i
-.PHONY : src/test_Controller.cpp.i
-
-src/test_Controller.s: src/test_Controller.cpp.s
-.PHONY : src/test_Controller.s
-
-# target to generate assembly for a file
-src/test_Controller.cpp.s:
-	$(MAKE) -f CMakeFiles/test_Controller.dir/build.make CMakeFiles/test_Controller.dir/src/test_Controller.cpp.s
-.PHONY : src/test_Controller.cpp.s
-
-src/test_Controller_compController.o: src/test_Controller_compController.cpp.o
-.PHONY : src/test_Controller_compController.o
-
-# target to build an object file
-src/test_Controller_compController.cpp.o:
-	$(MAKE) -f CMakeFiles/test_Controller_compController.dir/build.make CMakeFiles/test_Controller_compController.dir/src/test_Controller_compController.cpp.o
-.PHONY : src/test_Controller_compController.cpp.o
-
-src/test_Controller_compController.i: src/test_Controller_compController.cpp.i
-.PHONY : src/test_Controller_compController.i
-
-# target to preprocess a source file
-src/test_Controller_compController.cpp.i:
-	$(MAKE) -f CMakeFiles/test_Controller_compController.dir/build.make CMakeFiles/test_Controller_compController.dir/src/test_Controller_compController.cpp.i
-.PHONY : src/test_Controller_compController.cpp.i
-
-src/test_Controller_compController.s: src/test_Controller_compController.cpp.s
-.PHONY : src/test_Controller_compController.s
-
-# target to generate assembly for a file
-src/test_Controller_compController.cpp.s:
-	$(MAKE) -f CMakeFiles/test_Controller_compController.dir/build.make CMakeFiles/test_Controller_compController.dir/src/test_Controller_compController.cpp.s
-.PHONY : src/test_Controller_compController.cpp.s
-
-src/test_dataLog.o: src/test_dataLog.cpp.o
-.PHONY : src/test_dataLog.o
-
-# target to build an object file
-src/test_dataLog.cpp.o:
-	$(MAKE) -f CMakeFiles/test_dataLog.dir/build.make CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.o
-.PHONY : src/test_dataLog.cpp.o
-
-src/test_dataLog.i: src/test_dataLog.cpp.i
-.PHONY : src/test_dataLog.i
-
-# target to preprocess a source file
-src/test_dataLog.cpp.i:
-	$(MAKE) -f CMakeFiles/test_dataLog.dir/build.make CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.i
-.PHONY : src/test_dataLog.cpp.i
-
-src/test_dataLog.s: src/test_dataLog.cpp.s
-.PHONY : src/test_dataLog.s
-
-# target to generate assembly for a file
-src/test_dataLog.cpp.s:
-	$(MAKE) -f CMakeFiles/test_dataLog.dir/build.make CMakeFiles/test_dataLog.dir/src/test_dataLog.cpp.s
-.PHONY : src/test_dataLog.cpp.s
-
-src/test_gmm.o: src/test_gmm.cpp.o
-.PHONY : src/test_gmm.o
-
-# target to build an object file
-src/test_gmm.cpp.o:
-	$(MAKE) -f CMakeFiles/test_gmm.dir/build.make CMakeFiles/test_gmm.dir/src/test_gmm.cpp.o
-.PHONY : src/test_gmm.cpp.o
-
-src/test_gmm.i: src/test_gmm.cpp.i
-.PHONY : src/test_gmm.i
-
-# target to preprocess a source file
-src/test_gmm.cpp.i:
-	$(MAKE) -f CMakeFiles/test_gmm.dir/build.make CMakeFiles/test_gmm.dir/src/test_gmm.cpp.i
-.PHONY : src/test_gmm.cpp.i
-
-src/test_gmm.s: src/test_gmm.cpp.s
-.PHONY : src/test_gmm.s
-
-# target to generate assembly for a file
-src/test_gmm.cpp.s:
-	$(MAKE) -f CMakeFiles/test_gmm.dir/build.make CMakeFiles/test_gmm.dir/src/test_gmm.cpp.s
-.PHONY : src/test_gmm.cpp.s
-
-src/test_myController.o: src/test_myController.cpp.o
-.PHONY : src/test_myController.o
-
-# target to build an object file
-src/test_myController.cpp.o:
-	$(MAKE) -f CMakeFiles/test_myController.dir/build.make CMakeFiles/test_myController.dir/src/test_myController.cpp.o
-.PHONY : src/test_myController.cpp.o
-
-src/test_myController.i: src/test_myController.cpp.i
-.PHONY : src/test_myController.i
-
-# target to preprocess a source file
-src/test_myController.cpp.i:
-	$(MAKE) -f CMakeFiles/test_myController.dir/build.make CMakeFiles/test_myController.dir/src/test_myController.cpp.i
-.PHONY : src/test_myController.cpp.i
-
-src/test_myController.s: src/test_myController.cpp.s
-.PHONY : src/test_myController.s
-
-# target to generate assembly for a file
-src/test_myController.cpp.s:
-	$(MAKE) -f CMakeFiles/test_myController.dir/build.make CMakeFiles/test_myController.dir/src/test_myController.cpp.s
-.PHONY : src/test_myController.cpp.s
-
-src/wamMoveNonThread.o: src/wamMoveNonThread.cpp.o
-.PHONY : src/wamMoveNonThread.o
-
-# target to build an object file
-src/wamMoveNonThread.cpp.o:
-	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.o
-.PHONY : src/wamMoveNonThread.cpp.o
-
-src/wamMoveNonThread.i: src/wamMoveNonThread.cpp.i
-.PHONY : src/wamMoveNonThread.i
-
-# target to preprocess a source file
-src/wamMoveNonThread.cpp.i:
-	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.i
-.PHONY : src/wamMoveNonThread.cpp.i
-
-src/wamMoveNonThread.s: src/wamMoveNonThread.cpp.s
-.PHONY : src/wamMoveNonThread.s
-
-# target to generate assembly for a file
-src/wamMoveNonThread.cpp.s:
-	$(MAKE) -f CMakeFiles/wamMoveNonThread.dir/build.make CMakeFiles/wamMoveNonThread.dir/src/wamMoveNonThread.cpp.s
-.PHONY : src/wamMoveNonThread.cpp.s
+src/torque_aritra_nilu.cpp.s:
+	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.s
+.PHONY : src/torque_aritra_nilu.cpp.s
 
 # Help Target
 help:
@@ -767,80 +212,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... collectData"
-	@echo "... collectData2"
-	@echo "... collectData3"
-	@echo "... collectData_onlyB"
 	@echo "... constants"
-	@echo "... dataCollector_myController"
-	@echo "... dataLog_jaType"
 	@echo "... edit_cache"
-	@echo "... gmm_traj_test"
-	@echo "... hand_test"
-	@echo "... playTenisLog"
-	@echo "... playTenisLog_nilu"
 	@echo "... rebuild_cache"
 	@echo "... samlibs"
-	@echo "... test_Controller"
-	@echo "... test_Controller_compController"
-	@echo "... test_dataLog"
-	@echo "... test_gmm"
-	@echo "... test_myController"
-	@echo "... wamMoveNonThread"
+	@echo "... torque_aritra_nilu"
 	@echo "... samLibs/constants.o"
 	@echo "... samLibs/constants.i"
 	@echo "... samLibs/constants.s"
 	@echo "... samLibs/samlibs.o"
 	@echo "... samLibs/samlibs.i"
 	@echo "... samLibs/samlibs.s"
-	@echo "... src/collectData.o"
-	@echo "... src/collectData.i"
-	@echo "... src/collectData.s"
-	@echo "... src/collectData2.o"
-	@echo "... src/collectData2.i"
-	@echo "... src/collectData2.s"
-	@echo "... src/collectData3.o"
-	@echo "... src/collectData3.i"
-	@echo "... src/collectData3.s"
-	@echo "... src/collectData_onlyB.o"
-	@echo "... src/collectData_onlyB.i"
-	@echo "... src/collectData_onlyB.s"
-	@echo "... src/dataCollector_myController.o"
-	@echo "... src/dataCollector_myController.i"
-	@echo "... src/dataCollector_myController.s"
-	@echo "... src/dataLog_jaType.o"
-	@echo "... src/dataLog_jaType.i"
-	@echo "... src/dataLog_jaType.s"
-	@echo "... src/gmm_traj_test.o"
-	@echo "... src/gmm_traj_test.i"
-	@echo "... src/gmm_traj_test.s"
-	@echo "... src/hand_test.o"
-	@echo "... src/hand_test.i"
-	@echo "... src/hand_test.s"
-	@echo "... src/playTenisLog.o"
-	@echo "... src/playTenisLog.i"
-	@echo "... src/playTenisLog.s"
-	@echo "... src/playTenisLog_nilu.o"
-	@echo "... src/playTenisLog_nilu.i"
-	@echo "... src/playTenisLog_nilu.s"
-	@echo "... src/test_Controller.o"
-	@echo "... src/test_Controller.i"
-	@echo "... src/test_Controller.s"
-	@echo "... src/test_Controller_compController.o"
-	@echo "... src/test_Controller_compController.i"
-	@echo "... src/test_Controller_compController.s"
-	@echo "... src/test_dataLog.o"
-	@echo "... src/test_dataLog.i"
-	@echo "... src/test_dataLog.s"
-	@echo "... src/test_gmm.o"
-	@echo "... src/test_gmm.i"
-	@echo "... src/test_gmm.s"
-	@echo "... src/test_myController.o"
-	@echo "... src/test_myController.i"
-	@echo "... src/test_myController.s"
-	@echo "... src/wamMoveNonThread.o"
-	@echo "... src/wamMoveNonThread.i"
-	@echo "... src/wamMoveNonThread.s"
+	@echo "... src/torque_aritra_nilu.o"
+	@echo "... src/torque_aritra_nilu.i"
+	@echo "... src/torque_aritra_nilu.s"
 .PHONY : help
 
 

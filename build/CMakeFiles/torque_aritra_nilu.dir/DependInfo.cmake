@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/niladriisl/eclipse_workspace/gwam-codes/samLibs/constants.cpp" "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/constants.dir/samLibs/constants.cpp.o"
+  "/home/niladriisl/eclipse_workspace/gwam-codes/src/torque_aritra_nilu.cpp" "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,4 +17,6 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/constants.dir/DependInfo.cmake"
+  "/home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/samlibs.dir/DependInfo.cmake"
   )
