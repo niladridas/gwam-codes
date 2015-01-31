@@ -46,5 +46,5 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/constants.dir/DependInfo.cmake"
   "CMakeFiles/samlibs.dir/DependInfo.cmake"
-  "CMakeFiles/torque_aritra_nilu.dir/DependInfo.cmake"
+  "CMakeFiles/theta_2_4.dir/DependInfo.cmake"
   )

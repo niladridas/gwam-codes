@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/nilxwam/workspace/gwam-codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/nilxwam/workspace/gwam-codes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/samlibs.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/samlibs.dir/flags.make
 
 CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o: CMakeFiles/samlibs.dir/flags.make
 CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o: ../samLibs/samlibs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nilxwam/workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/samLibs/samlibs.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o -c /home/nilxwam/workspace/gwam-codes/samLibs/samlibs.cpp
 
 CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/samLibs/samlibs.cpp > CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nilxwam/workspace/gwam-codes/samLibs/samlibs.cpp > CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.i
 
 CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/samLibs/samlibs.cpp -o CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nilxwam/workspace/gwam-codes/samLibs/samlibs.cpp -o CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s
 
 CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.requires:
 .PHONY : CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.o.requires
@@ -95,6 +95,6 @@ CMakeFiles/samlibs.dir/clean:
 .PHONY : CMakeFiles/samlibs.dir/clean
 
 CMakeFiles/samlibs.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/samlibs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nilxwam/workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nilxwam/workspace/gwam-codes /home/nilxwam/workspace/gwam-codes /home/nilxwam/workspace/gwam-codes/build /home/nilxwam/workspace/gwam-codes/build /home/nilxwam/workspace/gwam-codes/build/CMakeFiles/samlibs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/samlibs.dir/depend
 

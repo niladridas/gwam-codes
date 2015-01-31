@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(Mycodes)
 
-set(MY_CODES_DIRS /home/niladriisl/eclipse_workspace/gwam-codes)
+set(MY_CODES_DIRS /home/nilxwam/workspace/gwam-codes)
 #set(SAM_LIBS QuadTS constants)
 set(SAM_LIBS constants samlibs)
 
@@ -54,16 +54,12 @@ add_programs(
 #	dataCollector_myController
 #	gmm_traj_test
 #	test_gmm
-	torque_aritra_nilu
-
-
-
-
-
-
-
-
-
+#	torque_aritra_nilu
+#	test_torque
+#	interactive_torque
+#	theta2sinu
+	theta_2_4
+#	outside_torque
 
 )
 

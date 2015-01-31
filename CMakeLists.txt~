@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(Mycodes)
 
-set(MY_CODES_DIRS /home/prabhupad/Dropbox/writings/Mycodes)
+set(MY_CODES_DIRS /home/nilxwam/workspace/gwam-codes)
 #set(SAM_LIBS QuadTS constants)
 set(SAM_LIBS constants samlibs)
 
@@ -34,36 +34,28 @@ endfunction()
 
 add_programs(
 #	test_ex04
-	test_Controller
-	test_dataLog
-	dataLog_jaType
-	collectData
-	collectData2
+#	test_Controller
+#	test_dataLog
+#	dataLog_jaType
+#	collectData
+#	collectData2
 #	computeCost_rt
 #	test_dataLog_running
 #	test_Controller1
 #	test_Controller2
 #	test_Controller3
-	playTenisLog
-	playTenisLog_nilu
-	collectData3
-	collectData_onlyB
-	wamMoveNonThread
-	test_myController
-	test_Controller_compController
-	hand_test
-	dataCollector_myController
-	gmm_traj_test
-	test_gmm
-
-
-
-
-
-
-
-
-
+#	playTenisLog
+#	collectData3
+#	collectData_onlyB
+#	wamMoveNonThread
+#	test_myController
+#	test_Controller_compController
+#	hand_test
+#	dataCollector_myController
+#	gmm_traj_test
+#	test_gmm
+	torque_aritra_nilu
+	test_torque
 
 )
 

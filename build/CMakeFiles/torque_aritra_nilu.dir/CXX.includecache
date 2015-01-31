@@ -38,7 +38,7 @@ stdlib.h
 /usr/include/eigen3/Eigen/Dense
 -
 
-/home/niladriisl/eclipse_workspace/gwam-codes/src/torque_aritra_nilu.cpp
+/home/nilxwam/workspace/gwam-codes/src/torque_aritra_nilu.cpp
 iostream
 -
 vector
@@ -56,9 +56,9 @@ ctime
 cstdio
 -
 C_Vector.hpp
-/home/niladriisl/eclipse_workspace/gwam-codes/src/C_Vector.hpp
+/home/nilxwam/workspace/gwam-codes/src/C_Vector.hpp
 Mass_matrix.hpp
-/home/niladriisl/eclipse_workspace/gwam-codes/src/Mass_matrix.hpp
+/home/nilxwam/workspace/gwam-codes/src/Mass_matrix.hpp
 sys/time.h
 -
 

@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/nilxwam/workspace/gwam-codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/nilxwam/workspace/gwam-codes/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nilxwam/workspace/gwam-codes/build/CMakeFiles /home/nilxwam/workspace/gwam-codes/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nilxwam/workspace/gwam-codes/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,17 +122,17 @@ samlibs/fast:
 .PHONY : samlibs/fast
 
 #=============================================================================
-# Target rules for targets named torque_aritra_nilu
+# Target rules for targets named theta_2_4
 
 # Build rule for target.
-torque_aritra_nilu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 torque_aritra_nilu
-.PHONY : torque_aritra_nilu
+theta_2_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 theta_2_4
+.PHONY : theta_2_4
 
 # fast build rule for target.
-torque_aritra_nilu/fast:
-	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/build
-.PHONY : torque_aritra_nilu/fast
+theta_2_4/fast:
+	$(MAKE) -f CMakeFiles/theta_2_4.dir/build.make CMakeFiles/theta_2_4.dir/build
+.PHONY : theta_2_4/fast
 
 samLibs/constants.o: samLibs/constants.cpp.o
 .PHONY : samLibs/constants.o
@@ -182,29 +182,29 @@ samLibs/samlibs.cpp.s:
 	$(MAKE) -f CMakeFiles/samlibs.dir/build.make CMakeFiles/samlibs.dir/samLibs/samlibs.cpp.s
 .PHONY : samLibs/samlibs.cpp.s
 
-src/torque_aritra_nilu.o: src/torque_aritra_nilu.cpp.o
-.PHONY : src/torque_aritra_nilu.o
+src/theta_2_4.o: src/theta_2_4.cpp.o
+.PHONY : src/theta_2_4.o
 
 # target to build an object file
-src/torque_aritra_nilu.cpp.o:
-	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o
-.PHONY : src/torque_aritra_nilu.cpp.o
+src/theta_2_4.cpp.o:
+	$(MAKE) -f CMakeFiles/theta_2_4.dir/build.make CMakeFiles/theta_2_4.dir/src/theta_2_4.cpp.o
+.PHONY : src/theta_2_4.cpp.o
 
-src/torque_aritra_nilu.i: src/torque_aritra_nilu.cpp.i
-.PHONY : src/torque_aritra_nilu.i
+src/theta_2_4.i: src/theta_2_4.cpp.i
+.PHONY : src/theta_2_4.i
 
 # target to preprocess a source file
-src/torque_aritra_nilu.cpp.i:
-	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.i
-.PHONY : src/torque_aritra_nilu.cpp.i
+src/theta_2_4.cpp.i:
+	$(MAKE) -f CMakeFiles/theta_2_4.dir/build.make CMakeFiles/theta_2_4.dir/src/theta_2_4.cpp.i
+.PHONY : src/theta_2_4.cpp.i
 
-src/torque_aritra_nilu.s: src/torque_aritra_nilu.cpp.s
-.PHONY : src/torque_aritra_nilu.s
+src/theta_2_4.s: src/theta_2_4.cpp.s
+.PHONY : src/theta_2_4.s
 
 # target to generate assembly for a file
-src/torque_aritra_nilu.cpp.s:
-	$(MAKE) -f CMakeFiles/torque_aritra_nilu.dir/build.make CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.s
-.PHONY : src/torque_aritra_nilu.cpp.s
+src/theta_2_4.cpp.s:
+	$(MAKE) -f CMakeFiles/theta_2_4.dir/build.make CMakeFiles/theta_2_4.dir/src/theta_2_4.cpp.s
+.PHONY : src/theta_2_4.cpp.s
 
 # Help Target
 help:
@@ -216,16 +216,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... samlibs"
-	@echo "... torque_aritra_nilu"
+	@echo "... theta_2_4"
 	@echo "... samLibs/constants.o"
 	@echo "... samLibs/constants.i"
 	@echo "... samLibs/constants.s"
 	@echo "... samLibs/samlibs.o"
 	@echo "... samLibs/samlibs.i"
 	@echo "... samLibs/samlibs.s"
-	@echo "... src/torque_aritra_nilu.o"
-	@echo "... src/torque_aritra_nilu.i"
-	@echo "... src/torque_aritra_nilu.s"
+	@echo "... src/theta_2_4.o"
+	@echo "... src/theta_2_4.i"
+	@echo "... src/theta_2_4.s"
 .PHONY : help
 
 

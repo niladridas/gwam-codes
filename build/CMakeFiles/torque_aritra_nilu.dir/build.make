@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niladriisl/eclipse_workspace/gwam-codes
+CMAKE_SOURCE_DIR = /home/nilxwam/workspace/gwam-codes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niladriisl/eclipse_workspace/gwam-codes/build
+CMAKE_BINARY_DIR = /home/nilxwam/workspace/gwam-codes/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/torque_aritra_nilu.dir/depend.make
@@ -48,17 +48,17 @@ include CMakeFiles/torque_aritra_nilu.dir/flags.make
 
 CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o: CMakeFiles/torque_aritra_nilu.dir/flags.make
 CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o: ../src/torque_aritra_nilu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nilxwam/workspace/gwam-codes/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o -c /home/niladriisl/eclipse_workspace/gwam-codes/src/torque_aritra_nilu.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o -c /home/nilxwam/workspace/gwam-codes/src/torque_aritra_nilu.cpp
 
 CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/niladriisl/eclipse_workspace/gwam-codes/src/torque_aritra_nilu.cpp > CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nilxwam/workspace/gwam-codes/src/torque_aritra_nilu.cpp > CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.i
 
 CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/niladriisl/eclipse_workspace/gwam-codes/src/torque_aritra_nilu.cpp -o CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nilxwam/workspace/gwam-codes/src/torque_aritra_nilu.cpp -o CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.s
 
 CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o.requires:
 .PHONY : CMakeFiles/torque_aritra_nilu.dir/src/torque_aritra_nilu.cpp.o.requires
@@ -102,6 +102,6 @@ CMakeFiles/torque_aritra_nilu.dir/clean:
 .PHONY : CMakeFiles/torque_aritra_nilu.dir/clean
 
 CMakeFiles/torque_aritra_nilu.dir/depend:
-	cd /home/niladriisl/eclipse_workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build /home/niladriisl/eclipse_workspace/gwam-codes/build/CMakeFiles/torque_aritra_nilu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nilxwam/workspace/gwam-codes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nilxwam/workspace/gwam-codes /home/nilxwam/workspace/gwam-codes /home/nilxwam/workspace/gwam-codes/build /home/nilxwam/workspace/gwam-codes/build /home/nilxwam/workspace/gwam-codes/build/CMakeFiles/torque_aritra_nilu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/torque_aritra_nilu.dir/depend
 
